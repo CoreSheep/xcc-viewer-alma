@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/tei.css">
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <script src="js/CETEI.js"></script>
+  <script src="js/alma-xcc.js"></script>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <link href="js/styles/default.min.css" rel="stylesheet"/>
+  <script src="js/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+<style>
+h2{
+	font-size: 1.3rem;
+}
+h1{
+	font-size: 1.5rem;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+	<div class="row" style="position: fixed;padding: 7px;width:92%;background-color: #ffffff;z-indeholax: 1;">
+
+		<div class="col-sm-5" style="text-align: left;">
+			<img src="images/xcc-2.png" height="50px"></img>
+		</div>
+		<div class="col-sm-5">
+			<form>
+				<select class="form-control"  onChange="loadXmlAlmaFile()" id="xseldoc" style="float:inline-start;">
+					<option value="" disabled selected hidden>select a file</option>
+					<option value="Testdaten_Edition_XCCViewer.xml">Testdaten_Edition_XCCViewer.xml</option>
+					<option value="Trotula_edition-20-5-2023.xml">Trotula_edition-20-5-2023.xml</option>
+					<option value="Trotula_edition_enriched-20-5-2023.xml">Trotula_edition_enriched-20-5-2023.xml</option>
+				</select>
+			</form>
+		</div>
+	</div>
+<br><br>
+<div class="row" style="margin-top:5px;">
+	<div class="col-sm-2"></div>
+	<div class="col-sm-8" id="edition-titel">
+	</div>
+</div>
+	<div class="row">
+
+		<div class="col-sm-2">
+			<div id="lexinfobox" style="border: solid 1px #132B51; padding: 7px; position:fixed;top:147px;right: 17px;height:387px;width:210px;border-radius: 7px;">
+
+					<div class="" id="nav-tab-note" >
+					  <!-- button class="nav-link active" id="nav-infos-tab" data-bs-toggle="tab" data-bs-target="#nav-infos" type="button" role="tab" aria-controls="nav-infos" aria-selected="true">Infos</button -->
+					  <button class="nav-link" id="nav-notes-tab"  style="margin: 10px auto" data-bs-toggle="tab" data-bs-target="#nav-notes" type="button" role="tab"  aria-selected="false"><strong style="color: #1D7898 ">Notes / Text Witness</strong></button>
+					</div>
+
+				<div class="tab-content" id="nav-tabContent-note">
+					<div class="tab-pane fade show active" style="background-color: #E2F0F5;height: 317px;padding: 10px;border-radius: 7px;" id="nav-infos" role="tabpanel" aria-labelledby="nav-infos-tab">Click on a text element to view the information</div>
+					<div class="tab-pane fade" style="background-color: #E2F0F5;height:100%;padding: 7px;border-radius: 7px;" id="nav-notes" role="tabpanel" aria-labelledby="nav-notes-tab"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-8" style="margin-top:20px;width:65%;">
+			<nav>
+				<div class="nav nav-tabs" id="nav-tab-edit" role="tablist">
+				  <button class="nav-link active" id="nav-viewer-tab" data-bs-toggle="tab" data-bs-target="#nav-viewer" type="button" role="tab" aria-controls="nav-viewer" aria-selected="true"><strong class="navTab">Edition</strong></button>
+					<button class="nav-link" id="nav-header-tab" data-bs-toggle="tab" data-bs-target="#nav-header" type="button" role="tab" aria-controls="nav-header" aria-selected="false"><strong class="navTab">Header</strong></button>
+					<button class="nav-link" id="nav-xml-tab" data-bs-toggle="tab" data-bs-target="#nav-xml" type="button" role="tab" aria-controls="nav-xml" aria-selected="false"><strong class="navTab">XML</strong></button>
+					<button class="nav-link" id="nav-editapparatus-tab" data-bs-toggle="tab" data-bs-target="#nav-editapparatus" type="button" role="tab" aria-controls="nav-editapparatus" aria-selected="false"><strong class="navTab">Apparatus</strong></button>
+				  <button class="nav-link" id="nav-editnotes-tab" data-bs-toggle="tab" data-bs-target="#nav-editnotes" type="button" role="tab" aria-controls="nav-editnotes" aria-selected="false"><strong class="navTab">Notes</strong></button>
+
+				</div>
+			</nav>
+
+			<!-- Displaying area for editions, xml, header... -->
+			<div class="tab-content" id="nav-tabContent-edit">
+				<div class="tab-pane fade show active" id="nav-viewer" role="tabpanel" aria-labelledby="nav-viewer-tab" style="overflow: auto">
+					<div id="xedithtml" class="lexedithtml"
+						 style="border: solid 1px #DCDCDC; padding: 7px;border-radius: 10px;height:650px;overflow: auto;"></div>
+				</div>
+
+				<div class="tab-pane fade" id="nav-header" role="tabpanel" aria-labelledby="nav-header-tab"
+					style="border: solid 1px #DCDCDC;padding: 7px; border-radius: 10px;height:650px;overflow: auto;">
+					<div id="xcc-xml-header"></div>
+				</div>
+
+				<div class="tab-pane fade" id="nav-xml" role="tabpanel" aria-labelledby="nav-xml-tab">
+					<div id="xcc-xml-edit" style="border: solid 1px #DCDCDC; padding: 7px;border-radius: 10px;height:650px;overflow: auto;">
+					</div>
+				</div>
+
+				<div class="tab-pane fade" id="nav-editapparatus" role="tabpanel" aria-labelledby="nav-editapparatus-tab"
+					style="border: solid 1px #DCDCDC;padding: 7px;border-radius: 10px;height:650px;overflow: auto;">
+					<span style="color:red;"></span>comming soon</span>
+				</div>
+
+				<div class="tab-pane fade" id="nav-editnotes" role="tabpanel" aria-labelledby="nav-editnotes-tab"
+					style="border: solid 1px #DCDCDC;padding: 7px;border-radius: 10px;height:650px;overflow: auto;">
+
+				</div>
+				<br><br>
+			</div>
+
+			<!-- div class="tab-content" id="nav-tabContent" -->
+				<!-- div id="xedithtml" class="lexedithtml overflow-auto" style="padding-bottom: 27px;margin-top: 37px;"></div -->
+			<!-- /div -->
+		</div>
+
+		<div class="col-sm-2">
+			<div id="legendeinfobox" style="border: solid 1px #132B51;position:fixed;top:147px;left: 27px;height:387px;border-radius: 7px;font-size:10pt;">
+				<!-- span style="font-weight:bold;margin-top:17px;">Legende:</span -->
+				<table>
+					<tr>
+						<td>&nbsp;&nbsp;LEM&nbsp;</td>
+						<td><div style="height: 17px;width: 17px;background-color: #0072bb;border-radius: 7px;"></div></td>
+					</tr>
+					<tr>
+						<td>&nbsp;&nbsp;RDG</td>
+						<td><div style="height: 17px;width: 17px;background-color: #0abab5;border-radius: 7px;"></div></td>
+					</tr>
+					<tr>
+						<td>&nbsp;&nbsp;SIC</td>
+						<td><div style="height: 17px;width: 17px;background-color: #be4d25;border-radius: 7px;"></div></td>
+					</tr>
+					<tr>
+						<td>&nbsp;&nbsp;rdgGRP&nbsp;&nbsp;</td>
+						<td><div style="height: 16px;width: 16px;background-color: #9b9b9b;border-radius: 2px;"></div></td>
+					</tr>
+					</table>
+						<!--Input checkbox for showLem, showSig...-->
+							<hr>
+							<input type="checkbox" id="lexshowLemcolor" data-status="1" class="form-check-input">&nbsp;show main manuscript readings (LEM)</input>
+							<br>
+							<input type="checkbox" id="lexshowSiccolor" data-status="1" class="form-check-input">&nbsp;show corrections (SIC)</input>
+							<br>
+							<input type="checkbox" id="lexshowRdgcolor" data-status="1" class="form-check-input">&nbsp;show variant readings (RDG)</input>
+
+							<br>
+							<input type="checkbox" id="lexshowRdgGrpcolor" data-status="1" class="form-check-input">&nbsp;show variant reading groups (rdgGRP)</input>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+</body>
+</html>
