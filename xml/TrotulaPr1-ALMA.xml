@@ -1,0 +1,2848 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI SYSTEM "../abreviations_ALMA.dtd">
+<!-- VM2ST modifier le schéma XML et renvoyer vers l'ODD comme ceci :
+<?xml-model href="https://alma.hadw-bw.de/editions/ODD/alma_editions_odd.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://alma.hadw-bw.de/editions/ODD/alma_editions_odd.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE TEI SYSTEM "https://alma.hadw-bw.de/editions/ODD/abreviations_Maritem.dtd">
+-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+<fileDesc>
+ <titleStmt>
+<title type="main">TrotulaPr<hi rendition="sup">1</hi>-ALMA</title>
+<title type="sub">Edition critique de la première version française en prose du traité <title><foreign xml:lang="lat">De passionibus mulierum</foreign></title> de <persName>Trotula de Salerne</persName>
+ text <origDate when="1217">1<hi rendition="sup">er</hi> tiers du 13<hi rendition="sup">e</hi> siècle</origDate>.</title>
+<author>Anonyme (traducteur fr.)</author>
+<author>Trotula de Salerne (auteur du texte-source latin)</author>
+<editor>
+<persName xml:id="VM"><forename>Viola</forename> <surname>Mariotti</surname></persName>
+<roleName>Docteure en philologie romane</roleName> et <roleName>chercheuse post-doctorale pour le projet ALMA (Heidelberger Akademie der Wissenschaften ; Romanisches Seminar - Universität Heidelberg).</roleName>
+</editor>
+<respStmt>
+   <resp>
+    Directrice du projet ALMA - Equipe scientifique de Heidelberg (ancien français)
+   </resp>
+   <persName xml:id="ST"><forename>Sabine</forename> <surname>Tittel</surname>, <roleName>chercheuse en philologie romane (Heidelberger Akademie der Wissenschaften ; Université de Heidelberg - Romanisches Seminar)</roleName> et <roleName>directrice du projet ALMA - Equipe scientifique de Heidelberg (ancien français).</roleName></persName>
+ </respStmt> 
+  <respStmt>
+  <resp>
+Membre du projet ALMA - Equipe scientifique de Heidelberg (ancien français)
+</resp>
+<persName xml:id="RM"><forename>Ragini</forename><surname>Menon</surname>, <roleName>doctorante en humanités numérique dans le cadre du projet ALMA.</roleName></persName>
+</respStmt>
+<respStmt>
+<resp>
+Directrice du projet ALMA - Equipe scientifique de Regensburg (ancien occitan)
+</resp>
+<persName xml:id="MS"><forename>Maria</forename> <surname>Selig</surname>, <roleName>professeure de philologie romane à l'Université de Regensburg</roleName>.</persName></respStmt>
+<respStmt>
+<resp>
+Directeur du projet ALMA - Equipe scientifique de Saarbrücken (ancien italien)
+</resp>
+<persName xml:id="EP"><forename>Elton</forename> <surname>Prifti</surname>, <roleName>professeur de philologie romane à l'Université de Saarbrücken</roleName>.</persName>
+</respStmt>
+<respStmt>
+<resp>
+Directeur du projet ALMA - Equipe scientifique de Saarbrücken (ancien italien)
+</resp>
+<persName xml:id="WS"><forename>Wolfgang</forename> <surname>Schweickard</surname>, <roleName>professeur emérite de philologie romane à l'Université de Saarbrücken</roleName>.</persName>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<p/>
+</publicationStmt>
+<sourceDesc>
+<listWit>
+<witness xml:id="S" sameAs="#London_British_Library_Sloane_3525">London, British Library, Sloane 3525, ff. 246vb-253rb, manuscrit de base (siglé S) ;</witness>
+ <witness xml:id="W" sameAs="London_Wellcome_Institute_for_the_history_of_Medicine_Library_564">London, Wellcome Institute for the history of Medicine Library, 564, manuscrit de contrôle (siglé W) ;</witness>
+ <witness xml:id="N" sameAs="Paris_Bibliothèque_nationale_de_France_NAL_693">Paris, Bibliothèque nationale de France, NAL 693, ff. 181v-183r, manuscrit de controle (siglé N).</witness>
+</listWit>
+<msDesc xml:id="London_British_Library_Sloane_3525" sameAs="#S">
+<msIdentifier>
+<settlement>London</settlement>
+<institution xml:id="london_british_library">
+<orgName>British Library</orgName>
+</institution>
+<repository>Sloane</repository>
+<idno>3525</idno>
+<altIdentifier>
+<idno type="facs">https://www.bl.uk/manuscripts/Viewer.aspx?ref=sloane_ms_3525</idno>
+</altIdentifier>
+</msIdentifier>
+<head>London, British Library, Sloane 3525
+ <origDate>Début du 14<hi rendition="sup">e</hi> siècle (<ref target="https://alma.hadw-bw.de/almabibl/siglum/TrotulaPr1-ALMA">TrotulaPr<hi rendition="sup">1</hi>M, ALMABibl</ref>) ; 14<hi rendition="sup">e</hi>siècle (<ref target="http://jonas.irht.cnrs.fr/manuscrit/31303">Base Jonas</ref>) ; seconde moitié du 13<hi rendition="sup">e</hi> siècle (<ref target="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Sloane_MS_3525">Catalogue British Library</ref>).</origDate>
+</head>
+<physDesc>
+<objectDesc form="codex">
+<supportDesc material="parchment">
+<support>Parchemin.</support>
+<extent><num>259</num> feuillets. La notice de <ref target="http://jonas.irht.cnrs.fr/manuscrit/31303">Jonas</ref> précise que les ff. 1-23 ont été ajoutés postérieurement et que les 29 cahiers sont invisibles.</extent>
+<foliation>Foliotation d'époque moderne en chiffres arabes à l'encre brune.</foliation>
+<collation>29 cahiers (quaternions).</collation>
+</supportDesc>
+<layoutDesc>
+<layout columns="2">
+Copié sur deux colonnes, le ms. compte environ 36 lignes par colonne.
+<dimensions type="layout">
+<height unit="mm">235</height>
+<width unit="mm">165</width>
+</dimensions>
+</layout>
+</layoutDesc>
+</objectDesc>
+<handDesc hands="1" cert="high">
+<handNote>
+<p>Une seule main qui emploie une écriture livresque gothique.</p>
+<p><q>Aux ff. 1r, 2r, 7v, 22v, 23r, 23v des recettes française d'une main du XVIe s. ; aux ff. 6-16, index analytique écrit d'une main picarde plus récente de celle du copiste du ms.</q> (<ref target="http://jonas.irht.cnrs.fr/manuscrit/31303">Jonas</ref>).</p>
+<p>Aux ff. 178v-179r une main anglaise ajoute des recettes médicales (<ref target="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Sloane_MS_3525">Catalogue British Library</ref>). Cet élément paléographique fait songer à une origine anglaise.</p>
+</handNote>
+</handDesc>
+<scriptDesc>
+<p><foreign xml:lang="lat">Textualis libraria</foreign> régulière.</p>
+</scriptDesc>
+<decoDesc>
+<p></p>
+</decoDesc>
+<bindingDesc>
+<binding>
+<p></p>
+</binding>
+</bindingDesc>
+</physDesc>
+<history>
+<origin>
+<origPlace>Origine incertaine : Angleterre (localisation par des indices paléographiques : <ref target="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Sloane_MS_3525">Catalogue British Library</ref>) ou France, région parisienne (localisation par la langue : <ref target="https://alma.hadw-bw.de/almabibl/siglum/TrotulaPr1-ALMA">TrotulaPr<hi rendition="sup">1</hi>M, ALMABibl</ref> et <ref target="http://jonas.irht.cnrs.fr/manuscrit/31303">Base Jonas</ref>, d'après P. Meyer, Romania 44 [1915-1917], pp. 182-214).</origPlace>
+ <origDate>Début du 14<hi rendition="sup">e</hi> siècle (<ref target="https://alma.hadw-bw.de/almabibl/siglum/TrotulaPr1-ALMA">TrotulaPr<hi rendition="sup">1</hi>M, ALMABibl</ref>) ; 14<hi rendition="sup">e</hi> siècle (<ref target="http://jonas.irht.cnrs.fr/manuscrit/31303">Base Jonas</ref>) ; seconde moitié du 13<hi rendition="sup">e</hi> siècle (<ref target="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Sloane_MS_3525">Catalogue British Library</ref>).</origDate>
+</origin>
+<provenance>Appartenu à Sir Hans Sloane (né 1660 - mort 1753), physicien et colectionneur de mss. Acquis par le British Museum en 1753 (<ref target="http://www.bl.uk/manuscripts/FullDisplay.aspx?ref=Sloane_MS_3525">Catalogue British Library</ref>).</provenance> 
+</history>
+</msDesc>
+ <msDesc xml:id="London_Wellcome_Institute_for_the_history_of_Medicine_Library_564" sameAs="#W">
+<msIdentifier>
+<settlement>London</settlement>
+<institution xml:id="london_wellcome_institute">
+<orgName>Wellcome Institute for the history of Medicine Library</orgName>
+</institution>
+<idno>546</idno>
+<altIdentifier>
+<idno type="facs">https://wellcomecollection.org/works/ageynkx7</idno>
+</altIdentifier>
+</msIdentifier>
+<head>London, Wellcome Institute for the history of Medicine Library, 546
+ <origDate>Milieu du 14<hi rendition="sup">e</hi> siècle (<ref target="https://alma.hadw-bw.de/almabibl/siglum/TrotulaPr1-ALMA">TrotulaPr<hi rendition="sup">1</hi>M, ALMABibl</ref> ; <ref target="http://jonas.irht.cnrs.fr/manuscrit/31733">Base Jonas</ref> - qui cite Hunt 2011 - et <ref target="https://wellcomecollection.org/works/ageynkx7">Catalogue Wellcome Institute</ref>).</origDate>
+</head>
+<physDesc>
+<objectDesc form="codex">
+<supportDesc material="parchment">
+<support>Parchemin.</support>
+<extent><num>91</num> feuillets</extent>
+<foliation></foliation>
+<collation></collation>
+</supportDesc>
+<layoutDesc>
+<layout columns="2">
+Copié sur deux colonnes, le ms. compte environ 35 lignes par colonne.
+<dimensions type="layout">
+<height unit="mm">210</height>
+<width unit="mm">145</width>
+</dimensions>
+</layout>
+</layoutDesc>
+</objectDesc>
+<handDesc hands="1" cert="high">
+<handNote>
+<p>Une seule main qui emploie une écriture livresque gothique.</p>
+</handNote>
+</handDesc>
+<scriptDesc>
+<p><foreign xml:lang="lat">Textualis libraria formata</foreign>.</p>
+</scriptDesc>
+<decoDesc>
+<p></p>
+</decoDesc>
+<bindingDesc>
+<binding>
+<p></p>
+</binding>
+</bindingDesc>
+</physDesc>
+<history>
+<origin>
+<origPlace>Origine non mentionnées explicitement par les catalogues. Dans <ref target="https://alma.hadw-bw.de/almabibl/siglum/TrotulaPr1-ALMA">TrotulaPr<hi rendition="sup">1</hi>M, ALMABibl</ref> France méridionale.</origPlace>
+ <origDate>Milieu du 14<hi rendition="sup">e</hi> siècle (<ref target="https://alma.hadw-bw.de/almabibl/siglum/TrotulaPr1-ALMA">TrotulaPr<hi rendition="sup">1</hi>M, ALMABibl</ref> ; <ref target="http://jonas.irht.cnrs.fr/manuscrit/31733">Base Jonas</ref> - qui cite Hunt 2011 - et <ref target="https://wellcomecollection.org/works/ageynkx7">Catalogue Wellcome Institute</ref>).</origDate>
+</origin>
+<provenance>Deux feuillets de garde en parchemin au début du ms. Sur le verso du premier, anthroponyme <q>Saudon</q> (?) rédigé par une main du début du 15e siècle. Sur le verso du second, mention suivante :
+<q><l>Ce present liure appartient a</l> 
+<l>Berthellemy le Roy demeurant</l>
+<l>paris en la Rue de la</l>
+<l>riviere au dit lieu au lougis</l>
+<l>de monsieur de Vignaulx</l>
+</q>
+En dessous de cette mention, signature de J[ean] B[aptiste] L[ouis] Chomel [1700-1765], le célèbre physicien français. Encore en dessous, mentions: 
+<q>Acheté 25 f. Ce livre a appartenu à Chomel</q> ;
+<q>Acheté à la vente de Mr. Bosquillon an 10' [180 1/2]</q>.
+La dernière mention pourrait faire songer au chimiste français Edouard François Michel Bosquillon [1744-1816]. (<ref target="https://wellcomecollection.org/works/ageynkx7">Catalogue Wellcome Institute</ref>).</provenance> 
+</history>
+</msDesc>
+<msDesc xml:id="Paris_Bibliothèque_nationale_de_France_NAL_693" sameAs="N">
+<msIdentifier>
+<settlement>Paris</settlement>
+<institution xml:id="Bibliothèque_nationale_de_France">
+<orgName>Bibliothèque Nationale de France</orgName>
+</institution>
+<repository>Nouvelles acquisitions latines</repository>
+<idno>693</idno>
+<altIdentifier>
+<idno type="facs">https://archivesetmanuscrits.bnf.fr/ark:/12148/cc713933</idno>
+</altIdentifier>
+</msIdentifier>
+<head>Paris, Bibliothèque nationale de France, nouvelles acquisitions latines 693
+ <origDate>13<hi rendition="sup">e</hi> - 14<hi rendition="sup">e</hi> siècle (<ref target="https://alma.hadw-bw.de/almabibl/siglum/TrotulaPr1-ALMA">TrotulaPr<hi rendition="sup">1</hi>M, ALMABibl</ref> ; <ref target="https://jonas.irht.cnrs.fr/manuscrit/73193">Base Jonas</ref> et <ref target="https://archivesetmanuscrits.bnf.fr/ark:/12148/cc713933">BnF Archives et manuscrits - fichier F. Avril</ref>).</origDate>
+</head>
+<physDesc>
+<objectDesc form="codex">
+<supportDesc material="parchment">
+<support></support>
+<extent><num></num></extent>
+<foliation></foliation>
+<collation></collation>
+</supportDesc>
+<layoutDesc>
+<layout columns="2">
+<dimensions type="layout">
+<height unit="mm"></height>
+<width unit="mm"></width>
+</dimensions>
+</layout>
+</layoutDesc>
+</objectDesc>
+<handDesc hands="1" cert="high">
+<handNote>
+<p></p>
+</handNote>
+</handDesc>
+<scriptDesc>
+<p/>
+</scriptDesc>
+<decoDesc>
+<p></p>
+</decoDesc>
+<bindingDesc>
+<binding>
+<p></p>
+</binding>
+</bindingDesc>
+</physDesc>
+<history>
+<origin>
+<origPlace>Origine non mentionnées explicitement par les catalogues. Dans <ref target="https://alma.hadw-bw.de/almabibl/siglum/TrotulaPr1-ALMA">TrotulaPr<hi rendition="sup">1</hi>M, ALMABibl</ref> France méridionale.</origPlace>
+<origDate></origDate>
+</origin>
+<provenance></provenance>
+</history>
+
+</msDesc>
+</sourceDesc>
+</fileDesc>
+<profileDesc>
+<creation resp="#VM" when-iso="2023-02-02">
+2023-02-02
+</creation>
+<textDesc>
+<channel mode="w"/>
+<constitution type="single"/>
+<derivation type="translation">Traduction</derivation>
+<domain type="medecine">Médecine</domain>
+<factuality type="fact">Texte technique</factuality>
+<interaction type="none"/>
+<preparedness type="prepared"/>
+<purpose type="inform"/>
+</textDesc>
+<settingDesc>
+<setting>
+<name>Angleterre</name>
+ <time when="1217">Premier tiers du 13<hi rendition="sup">e</hi> siècle</time>
+</setting>
+</settingDesc>
+</profileDesc>
+<encodingDesc>
+<p>Notre encodage s'aligne sur les schémas XML-TEI réalisés à l'Ecole nationale des chartes par <bibl>F. Glorieux</bibl> et <bibl>V. Jolivet</bibl> et documentés par <bibl>O. Guyotjeannin</bibl> et <bibl>O. Canteaut</bibl>. Bien que ces schémas aient été prévus pour les actes documentaires, ils peuvent également être utilisés pour les textes littéraires. Lorsque nous en avons ressenti le besoin, nous nous sommes également éloignés desdits schémas en concevant nous-mêmes des solutions d'encodage customisé mais toujours dans le respect des normes prévues par les <title>Guidelines</title> de la communauté TEI. Une ODD restrictive avec une documentation détaillée permet de comprendre quels ont été les choix d'encodage du projet ALMA.</p>
+</encodingDesc>
+<revisionDesc>
+<change when-iso="2023-02-02" resp="#VM">Création du fichier de l'éd. XML-TEI de TrotulaPr<hi rendition="sup">1</hi>-ALMA.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:id="TrotulaPr1-ALMA_edition" xml:lang="xno" type="fro">
+<front>
+<div xml:id="info_texte">
+<head>Texte</head>
+<p>TrotulaPr<hi rendition="sup">1</hi>, traité gynécologique attribué traditionellement à Trota ou Trotula de Salerno, version fr. en prose basée sur la 1e réd. du Liber de sinthomatibus mulierum" (v. <ref target="https://alma.hadw-bw.de/almabibl/siglum/TrotulaPr1M">DEAFBibl, TrotulaPr<hi rendition="sup">1</hi></ref>).</p>
+</div>
+<div xml:id="principes_edition">
+<div xml:id="tradition_manuscrite">
+<head>Tradition manuscrite et rapports entre les témoins</head>
+<p/>
+</div>
+<div xml:id="choix_mss">
+<head>Choix du manuscrit de base</head>
+<!-- VM Evoquer ici l'édition du texte-source utilisée + création de l'xml:id pour TrotLat -->
+<p/>
+</div>
+<div xml:id="apparat_critique">
+<head>Apparat critique</head>
+<p xml:id="ed"><!-- VM évoquer ici la précisation de la responsabilité éditoriale dans l'encodage --></p>
+</div>
+<div xml:id="toilette_texte">
+<head>Toilette du texte</head>
+<p>Pour les critères qui régissent notre toilette du texte, cf. <title>Principes d'édition du corpus d'ALMA</title></p>
+</div>
+</div>
+</front>
+<body>
+<div xml:id="TrotulaPr1-ALMA_prologue"><!-- [Prologue] -->
+<head><label>[0]</label>[Prologue]</head>
+ <!-- Collation prologue -->
+ <note>Le prologue est conservé intégralement, avec une mouvance considérable, par SNW. Dans W le prologue est précédé de la rubirique
+ <hi rendition="em">Or est bon a savoir por quoi fammes ont icelle maladie que l'en appele fleurs et qu'eles senefient.</hi> (fol. 46vb).</note>
+<p xml:id="TrotulaPr1-ALMA_prologue_0.1">
+<label>[0.1]</label>
+<note>Notes de lecture marginales, à l'encre brune, dans la marge gauche du f. 246vb du ms. S, en correspondance du début du prologue (collation avec TrotFr ou TrotLat ?).</note>
+<pb n="246v" type="246" subtype="v"/><cb n="d"/>
+<app>
+<lem wit="#S">
+<lb n="1"/>Quant Dex nostre<w>Seign<lb n="2"/>or</w> out le  mu&tilde-nasale-n;d estoré,</lem>
+<rdgGrp>
+<rdg wit="#N">Deu nostre Seigneur, quant il ot le munde estoré</rdg>
+<rdg wit="#W">Diex nostre Sire, quant il ot le secle estoré</rdg>
+</rdgGrp>
+</app>
+<note corresp="#TrotLat"><hi rendition="em">Cum auctor uniuersitatis deus in prima mundi constitutione rerum naturas singulas iuxta genus suum distingeret</hi>. La leçon commune de NW s'éloigne davantage de TrotLat que S.</note>
+<app>
+<lem wit="#S #W"/>
+<rdg wit="#N">et</rdg>
+</app>
+<note corresp="#TrotLat"><hi rendition="em">et</hi> om. TrotLat</note>
+<lb n="3"/>sor tote creature si fist
+<lb n="4"/>home
+<app>
+<lem wit="#S #N">raisnable</lem>
+<rdg wit="#W">remuable</rdg>
+</app>
+<note corresp="#TrotLat"><hi rendition="em">cui super aliorum animalium conditione rationis et intellectus libertatem dedit</hi> La leçon isolée de W s'écarte de TrotLat.</note>
+<app>
+<lem wit="#S #W"/>
+<rdg wit="#N">creature</rdg>
+</app> 
+, puis li dona
+<w>seig<lb n="5"/>norie</w> de totes terrienes choses,
+<lb n="6"/>si co&tilde-nasale-m;manda à
+<app>
+<lem wit="#S">creistre</lem>
+<rdg wit="#N">estre</rdg>
+<rdg wit="#W">conoistre</rdg>
+</app>
+&et-tironien-barré; <choice><corr resp="#ed"/><sic>&et-tironien-barré;</sic></choice> à
+<w>&mlt-tilde-moult;<lb n="7"/>teplier</w>,
+<app>
+<lem wit="#S #N"/>
+<rdg wit="#W">home et fame</rdg><witDetail wit="#W">ajoute W</witDetail>
+</app>
+&et-tironien-barré; establi ke
+<app>
+<lem wit="#S #N"/>
+<rdg wit="#W">d'ome et de fame istroit fruit et</rdg><witDetail wit="#W">Note de lecture qui corrige <hi rendition="em">fruit</hi> / <hi rendition="em">frint</hi> (?) en <hi rendition="em">fruit</hi></witDetail>
+</app>
+<note corresp="#TrotLat">SN s'alignent sur TrotLat contre W.</note>
+des deus
+<lb n="8"/>vendreit le tierz, &et-tironien-barré;
+<app>
+<lem wit="#S #N"/>
+<rdg wit="#W">premierement</rdg>
+</app>
+<note corresp="#TrotLat"><hi rendition="em">premierement</hi> om. SNTrotLat contre W</note>
+del cors de l’
+<lb n="9"/>home, qui plus est de chaude
+<w>na<lb n="10"/>ture</w>
+<app>
+<lem wit="#S">&et-tironien-barré; de seche</lem> 
+<rdg wit="#N">et de lui</rdg><witDetail wit="#N">ajoute N</witDetail>
+<rdg wit="#W"/>
+</app>
+<note corresp="#TrotLat"><hi rendition="em">naturam masculi calidam et siccam constituens</hi></note>
+istreit la seme&tilde-nasale-n;ce
+<app>
+<rdgGrp>
+<lem wit="#S #N">
+<lb n="11"/>en la feme, ke plus est de freide
+<lb n="12"/>nature, &et-tironien-barré; de mole la
+<app>
+<lem wit="#S"/>
+<rdg wit="#N">semence</rdg>
+</app>
+reoevreit,
+<app>
+<lem wit="#S"/>
+<rdg wit="#N">el commencement meismes est medlé la semence de la femme od sa semence de l'home</rdg>
+</app>
+<lb n="13"/>&et-tironien-barré;
+</lem>
+</rdgGrp>
+<rdg wit="#W"/><witDetail wit="#W">om. W</witDetail>
+</app>
+par l'atempre<choice><corr resp="#ed"/><sic>me</sic></choice>ment del
+<lb n="14"/>
+<app>
+<lem wit="#S #N">chalt &et-tironien-barré; del freit</lem> 
+<rdg wit="#W">dou chaut et du froiz</rdg><witDetail wit="#W">Note de lecture qui corrige <hi rendition="em">froiz</hi> en ajoutant dans interl. un <hi rendition="em">t</hi></witDetail>
+</app>
+ <app>
+<lem wit="#S #N"/>
+<rdg wit="#W">c'est à savoir de la chalour de l'omme et de la froidor de la femme</rdg>
+</app>
+&et-tironien-barré; del sec &et-tironien-barré; del
+<lb n="15"/>moiste
+<app>
+<lem wit="#S"/>
+<rdg wit="#N">est li germes alevez et</rdg>
+<rdg wit="#W">sunt li .iiij. humors, le chaut et le froit et le sec et le moillié</rdg>
+</app>
+<note corresp="#TrotLat"><hi rendition="em">Et ut masculus qualitate forciori officium in muliere tamquam in agro commisso semen effundret, et ut mulier qualitate debiliori tamquam uiri officio subdita, semen effusum in gremio nature reciperet.</hi></note> 
+creistreit li enfes.
+<app>
+<lem wit="#S #N">Ices
+<lb n="16"/>quatre choses sunt necessaire
+<lb n="17"/>as herbes &et-tironien-barré; as arbres &et-tironien-barré; as blez.</lem>
+<rdg wit="#W">si come nous voion de ces arbres et des bienz qui ne croissent mie bien sanz l'atemprement de ces .iiij. humeurs</rdg>
+<witDetail wit="#W">Note de lecture interl. qui remplace le <hi rendition="em">z</hi> de <hi rendition="em">bienz</hi> par <hi rendition="em">s</hi></witDetail>
+</app>
+<note corresp="#TrotLat"><hi rendition="em">Ices quatre... as blez</hi> est une innovation de la tr. fr. omis par TrotLat.</note>
+</p>
+<p xml:id="TrotulaPr1-ALMA_prologue_0.2">
+<label>[0.2]</label>
+<lb n="18"/>Mais pour ce ke les femes su&tilde-nasale-n;t
+<lb n="19"/>de plus fieble
+<app>
+<lem wit="#S">qualité</lem>
+<rdg wit="#N">nature et de plus fieble qualité</rdg>
+<witDetail wit="#N">N conserve la version la plus proche du texte-source et sans doute de l'archétype fr., qui augmentait l'original latin par le syntagme <hi rendition="em">de plus fieble nature et de plus fieble qualité</hi>. La leçon du ms. de base est partiellement lacunaire (sans doute en raison d'un saut du même au même <hi rendition="em">de plus fieble... de plus fieble</hi>).</witDetail>
+<rdg wit="#W"/><witDetail wit="#W">om. W. Note de lecture dans la marge gauche qui ajoute <hi rendition="em">ont le cors plus froit que les homes</hi></witDetail>
+</app>
+<app>
+<lem wit="#S #N">ke li <w>o<lb n="20"/>me</w>
+</lem>
+<rdg wit="#W"/><witDetail wit="#W">om. W</witDetail>
+</app>
+<note corresp="#TrotLat"><hi rendition="em">Quoniam ergo mulieres uiris sunt debiliores natura</hi></note>
+, &et-tironien-barré; ount greignor travail
+<lb n="21"/>
+<app>
+<lem wit="#N #W">d’enfanter</lem>
+<rdg wit="#S">d'enfant</rdg>
+</app>
+<note corresp="#TrotLat"><hi rendition="em">et quia in partu sepissime molestantur</hi></note>
+<app>
+<lem wit="#S #N">
+pour ce lor avienent <lb n="22"/>plusors enfermetez ke as <w>ho<lb n="23"/>mes</w>
+</lem>
+<rdg wit="#W">si lor avient enfermetez aus femelles plus qu'as maales</rdg>
+</app>
+<note corresp="#TrotLat"><foreign xml:lang="lat">hinc est quare in eis sepius habundant egritudines</foreign></note>
+<app>
+<lem wit="#S #W"/>
+<rdg wit="#N">ne font</rdg><witDetail wit="#N">Ajout isolé de N contre SWTrotLat</witDetail>
+</app>
+, &et-tironien-barré; maiesmement à cels
+<lb n="24"/>
+<app>
+<lem wit="#S #N">membres</lem>
+<rdg wit="#W"/><witDetail wit="#W">om. W</witDetail>
+</app>
+ki à l’engendreure
+<lb n="25"/>
+<app>
+<lem wit="#S">apertienenent</lem>
+<rdg wit="#N">apendent</rdg>
+<rdg wit="#W">apertient</rdg>
+</app>
+<note corresp="#TrotLat"><hi rendition="em">et maxime circa membra operi nature debita</hi></note>
+. Et pour ce ke
+<lb n="26"/>femes sunt plus huntoses de
+dire
+<lb n="27"/>
+lor
+<app>
+<lem wit="#S">enfermetez</lem>
+<rdg wit="#N">maus</rdg>
+<rdg wit="#W"/><witDetail wit="#W">om. W</witDetail>
+<note corresp="#TrotLat"><hi rendition="em">calamitas</hi></note>
+</app>
+as homes
+<lb n="28"/>ke as femes, si lor faz icest
+<w>li<lb n="29"/>vre</w> en language ke eles l’
+<w>en<lb n="30"/>tendent</w>, que les unes sachent
+<lb n="31"/>les altres aidier. Bien sachent
+<lb n="32"/>que je i met del mielz
+<app>
+<lem wit="#S"/>
+<rdg wit="#N">que apent</rdg>
+</app>
+ke lor
+<lb n="33"/>besoigne à lor enfermetez que
+<lb n="34"/>je ai trouvé des diz <persName>Ypocras</persName> et
+<lb n="35"/><persName>Galien</persName>
+<app>
+<lem wit="#S #N">
+et <persName>Costentin</persName> et <persName>Cleopa<lb n="36"/>tras</persName>
+</lem>
+<rdg wit="#W">et <persName>Dyopatre</persName> et <persName>Oribasie</persName> et <persName>Dyacondes</persName> et <persName>Constentin</persName></rdg>
+</app>
+<note corresp="#TrotLat"><hi rendition="em">Costentin</hi>, <hi rendition="em">Cleopatras (Dyopatre W)</hi>, <hi rendition="em">Oribasie</hi>, <hi rendition="em">Dyacondes</hi> om. TrotLat</note>
+<app>
+<lem wit="#S"/>
+<rdg wit="#N">e <persName>Diascorides</persName> e <persName>Almasor</persName> e <persName>Apollo</persName> e <persName>Platearie</persName> e <persName>Rogerine</persName></rdg><witDetail wit="#N">ajoute N</witDetail>
+</app>
+, &et-tironien-barré; ici troveront do&tilde-nasale-n;t li mal
+ <pb n="247r" type="247" subtype="r"/><cb n="a"/>
+<lb n="1"/>vienent &et-tironien-barré; coma&tilde-nasale-n;t
+<app>
+<lem wit="#S">porront <w>gua<lb n="2"/>rir</w></lem>
+<rdg wit="#N #W">les garrez</rdg><witDetail wit="#N #W">Leçon commune de NW contre S. Les deux leçons sont des innovations par rapport à TrotLat.</witDetail>
+</app>
+<note corresp="#TrotLat"><foreign xml:lang="lat">ut causas egritudinum earum et signa et curas exponerem et dicerem</foreign></note>.
+</p>
+<p xml:id="TrotulaPr1-ALMA_prologue_0.3">
+<label>[0.3]</label>
+<note>Notes de lecture marginales, à l'encre brune, dans la marge gauche du f. 247ra du ms. S, en correspondance du § 0.3 (collation avec TrotFr ou TrotLat ?).</note>
+<lb n="3"/>Pour ce ke feme n’a mie
+<lb n="4"/>tant de chalor
+<app><lem wit="#S #N">en soun cors</lem>
+<rdg wit="#W"/>
+</app>
+<lb n="5"/>ke puisse
+<app>
+<lem wit="#S #N">desechier</lem>
+<rdg wit="#W">asechier</rdg>
+</app>
+<note corresp="#TrotLat"><hi rendition="em">desiccare</hi></note>
+les males
+<lb n="6"/>humors ki al cors li abunde&tilde-nasale-n;t
+<lb n="7"/>ker ne pueent
+<app>
+<lem wit="#N">tant</lem>
+<rdg wit="#S"/>
+<rdg wit="#W">si</rdg>
+</app>
+<note corresp="#TrotLat"><hi rendition="em">tantum</hi></note>
+grant travail
+<lb n="8"/>endurer
+<app>
+<rdgGrp>
+<lem wit="#S #N">ke par suor les
+<app>
+<lem wit="#S">en<w>get<lb n="9"/>te</w></lem>
+<rdg wit="#N">engettent</rdg>
+</app>
+</lem>
+<rdg wit="#W"/>
+</rdgGrp>
+</app>
+<note corresp="#TrotLat"><hi rendition="em">ut per sudorem ualeat ad exteriora expellere</hi></note>
+com fait li
+<app>
+<lem wit="#S #N">home</lem>
+<rdg wit="#W">maales</rdg>
+</app>
+<note corresp="#TrotLat"><hi rendition="em">sicut in uiris</hi></note>
+, si ha
+<w>natu<lb n="10"/>re</w> establi un espurgement
+<lb n="11"/>ke l’on apele flos, pour ce k’ele
+<lb n="12"/>ne puet
+<app>
+<lem wit="#S">concevoir</lem>
+<rdg wit="#N">enceinter</rdg> 
+<rdg wit="#W">charger fleurs</rdg>
+</app>
+<note corresp="#TrotLat"><hi rendition="em">sic mulieres sine suis floribus sue conceptionis officio defraudantur</hi></note>
+sanz ice plus
+<lb n="13"/>que li arbres
+<app>
+<lem wit="#S #N">fruit porter</lem>
+<rdg wit="#W">frutefier</rdg>
+</app>
+se
+<lb n="14"/>einz ne florist.
+<app>
+<lem wit="#S #N"/>
+<rdg wit="#W">ne pot la fame porter se l'en a encoys</rdg><witDetail wit="#W">ajoute W contre SNTrotLat</witDetail>
+</app>
+<app>
+<lem wit="#S">
+Icest espurgeme&tilde-nasale-n;t
+<lb n="15"/>avient à la feme
+altresi com
+<lb n="16"/>à l’home avient pollucion pour
+<lb n="17"/>habu&tilde-nasale-n;dance des humors.</lem>
+<rdg wit="#N #W"/><witDetail wit="#N #W">om. NW contre STrotLat</witDetail>
+</app>
+<note corresp="#TrotLat"><hi rendition="em">Semper enim natura gravata a quibusdam humoribus, siue in uiris, siue in mulieribus, iugum suum nititur expellere uel deponere et laborem minuere</hi></note>
+</p>
+<p xml:id="TrotulaPr1-ALMA_prologue_0.4">
+<label>[0.4]</label>
+<app>
+<lem wit="#N #W">Icist espurgement vient à la femme chescun mois pur l'abundance des humours e</lem>
+<rdg wit="#S"/><witDetail wit="#S">om. S (saut du même au même). La faute mécanique de S a été corrigée d'après NWTrotLat</witDetail>
+</app>
+<note corresp="#TrotLat"><hi rendition="em">Cotigit autem mulieribus hec purgatio</hi></note>
+&et-tironien-barré;
+<w>na<lb n="18"/>tu<choice><corr resp="#ed">r</corr><sic/></choice>elment</w> quant ele a quatorze
+<lb n="19"/>anz,
+<app>
+<lem wit="#S">&et-tironien-barré; a la fiee selonc ce ke ele
+<lb n="20"/>est plus chaude à treze anz ou
+<lb n="21"/>à doze
+</lem>
+<rdg wit="#N">ou .12. e a la foiz vers ceo qu'ele est chaude ou freide dure plus o mains</rdg>
+<rdg wit="#W">à la foiz à .xij. quant elle est de plus chaude nature</rdg><witDetail wit="#W"><hi rendition="em">elle</hi> ajout interl. par la main du lecteur</witDetail>
+</app>
+<note corresp="#TrotLat"><hi rendition="em">Contigit autem mulieribus hec purgatio circa .xiij. annum, uel paulu cicius uel paulo tardius, secundum quod in eis habundat magis uel minus caliditas uel frigiditas.</hi> Innovation d'archétype (commune à SNW contre TrotLat) concernant l'âge de la ménarche</note> .
+Si dure à feme megre
+<app>
+<lem wit="#S"><lb n="22"/>desk’à cinquante anz &et-tironien-barré; à la fiee
+<lb n="23"/>desk’à seisante</lem>
+<rdg wit="#N">des qu'ele ait .44. v .40. à la foiz des qu'ele ait .60. anz</rdg><witDetail wit="#N">Lecture incertaine pour .60.</witDetail>
+<rdg wit="#W">jusqu'à .l. anz et à la foie jusque à .xlx.</rdg><witDetail wit="#W">Dittographie pour .lx.</witDetail>
+<note corresp="#TrotLat"><foreign xml:lang="lat">usque .l. annum si macra est, quandoque usque ad .lx. uel .lxv. si est humida</foreign>. Banalisation d'archétype (commune à SNW contre TrotLat) concernant l'âge de la menopause.</note>
+</app>
+,
+<app>
+<lem wit="#S #W">à la meiene
+<lb n="24"/>desk’à quarante,
+</lem>
+<rdg wit="#N"/><witDetail wit="#N">NTrotLat contre SW qui innovent</witDetail>
+</app>
+à la &mlt-tilde-moult; grosse desk’à
+<app>
+<lem wit="#S #W"><lb n="25"/>trente &et-tironien-barré; cinc</lem>
+<rdg wit="#N">.34. anz</rdg>
+</app>
+<note corresp="#TrotLat">.xxxv.</note>.
+S’ele
+<lb n="26"/>les a
+<app>
+<lem wit="#S">droiturelment</lem>
+<rdg wit="#N #W">a dreit terme et à mesure</rdg><witDetail wit="#N #W">Innovation isolée de S contre NWTrotLat</witDetail>
+</app>
+<note corresp="#TrotLat"><hi rendition="em">debito tempore et ordine competenti</hi></note>
+<app>
+<lem wit="#S #W"/>
+<rdg wit="#N">Que trop ne poi ni art. Si deit aver ses flurs .4. jours v .3. solum sa nature. E asquantes femmes le unt .2. fois el mois, une foiz el cressant e altre al decors, solunc ceo que chalur dominiet en eles. Si en issent les maus humors del cors.</rdg><witDetail wit="#N">ajout isolé de N contre SWTrotLat</witDetail>
+</app>
+<note corresp="#TrotLat">L'ajout isolé de N est partiellement attesté dans TrotLat, qui complète la phrase commune attestée par SNW <hi rendition="em">Si autem debito tempore et ordine competenti contigerit huiusmodi purgatio,</hi> par <hi rendition="em">expedit se competenter nature a superfluis humoribus</hi>.</note>
+, ke trop
+<lb n="27"/>
+<app>
+<lem wit="#S #N">ne pou</lem>
+<rdg wit="#W"/>
+</app>
+<note corresp="#TrotLat"><hi rendition="em">plus uel minus</hi></note>
+ni ait, si en issent les
+<lb n="28"/>males humors del cors.
+<app>
+<lem wit="#S">Se ce
+<lb n="29"/>n'oun</lem>
+<rdg wit="#W">Se ce se non</rdg><witDetail wit="#W">Note de lecture dans la marge droite qui essaie de corriger le passage en ajoutant <hi rendition="em">ou</hi>.</witDetail>
+</app>
+, si enissent &et-tironien-barré; naissent
+<lb n="30"/>plusors enfermetez, ker à la
+<lb n="31"/>fiee en pert la feme soun
+<app>
+<lem wit="#S #N #W">
+<w>ta<lb n="32"/>lent</w>
+</lem>
+<witDetail wit="#W">Notes de lecture dans la marge droite (avec signe de rappel dans l'interl.) <hi rendition="em">de ma</hi>, <hi rendition="em">de bone a la</hi>, <hi rendition="em">a talent</hi></witDetail>
+</app>
+de mangier &et-tironien-barré; de boivre
+<lb n="33"/>&et-tironien-barré; si a voncheison, &et-tironien-barré; à la fiee
+<w>de<lb n="34"/>sirre</w> mangier de creie ou de
+<lb n="35"/>
+ <app>
+ <lem wit="#S">
+charbon
+</lem> 
+ <rdg wit="#N">carbons</rdg>
+ <rdg wit="#W">carbons</rdg><witDetail wit="#W">Note de lecture qui ajoute dans l'interligne un <hi rendition="em">h</hi> à <hi rendition="em">carbons</hi></witDetail>
+</app> 
+ ou ce ou altre des
+<w>na<lb n="36"/>turel</w> chose.
+</p>
+<p xml:id="TrotulaPr1-ALMA_prologue_0.5">
+<label>[0.5]</label>
+À la fiee lor avie&tilde-nasale-n;t
+ <pb n="247r" type="247" subtype="r"/><cb n="b"/>
+<lb n="37"/>dolor al cuer et al dos &et-tironien-barré; al
+<lb n="38"/>chief &et-tironien-barré; as oilz &et-tironien-barré;. À la fiee
+ <app>
+ <lem wit="#S #N">
+ <w>fie<lb n="39"/>vre</w> ague
+</lem> 
+ <rdg wit="#W">augue fievre</rdg><witDetail wit="#W">Note de lecture dans la marge droite <hi rendition="em">fievre</hi></witDetail>
+</app> 
+<app>
+<lem wit="#S #N #W"><gap/></lem><witDetail wit="#S #N #W">passage lacunaire dans SNW. Probable faute d'archétype corrigée par N, cf. infra.</witDetail>
+</app>.
+Ices
+<app>
+<lem wit="#S">enfermetez</lem>
+<rdg wit="#N #W">maus</rdg>
+</app>
+<lb n="40"/>avienent quant la feme pert
+<lb n="41"/>longuem&tilde-nasale-en;t ses flors.
+<app>
+<lem wit="#S">
+ &et-tironien-barré; à la fiee
+ <lb n="42"/>ou corpos ou ydropisie ou
+ <w>dis<lb n="43"/>sivre</w>: là les pert ele del tout
+ <lb n="44"/>ou la meneison l’en vient.
+</lem>
+<rdg wit="#N">e par iceo si vient en ydropesie u deverie : là ele le pert del tout, si ele ne seit baraigne u la meneisun lui veint</rdg>
+ <rdg wit="#W"/>
+</app>
+</p>
+<p xml:id="TrotulaPr1-ALMA_prologue_0.6">
+<label>[0.6]</label>
+<note>Notes de lecture marginales, à l'encre brune, dans la marge gauche du f. 247rb du ms. S, en correspondance du § 0.6 (collation avec TrotFr ou TrotLat ?).</note>
+<lb n="45"/>à la fiee pour ce ke la marriz
+<lb n="46"/>est desnaturee &et-tironien-barré; refroidiee
+<lb n="47"/>&et-tironien-barré; à la fiee de ce ke
+ <app>
+ <lem wit="#S #N">
+ les veines
+<lb n="48"/>de la marriz
+</lem> 
+ <rdg wit="#W">ces voines dou marriz</rdg><witDetail wit="#W">Notes de lecture qui corrige, dans l'interligne, en <hi rendition="em">les</hi> et de <hi rendition="em">la</hi></witDetail>
+</app> 
+sunt grailes com
+<lb n="49"/>ount les graisles femes &et-tironien-barré; ke
+<lb n="50"/>les humors n’ont veie par quoi
+<lb n="51"/>eles
+ <app>
+<lem wit="#S">puissent passer</lem>
+ <rdg wit="#N">issent</rdg>
+ <rdg wit="#W">puissent passer enz</rdg>
+</app> 
+ ,
+ <app>
+ <lem wit="#S">
+ et à la
+<w>fi<lb n="52"/>ee</w> de ce que les humors sunt
+<lb n="53"/>espesses &et-tironien-barré; engluees &et-tironien-barré; ne
+<w>pu<lb n="54"/>eent</w> eissir ou pour ce &q-tildé-que; feme
+<lb n="55"/>manjue poe &et-tironien-barré; mult travaille
+<lb n="56"/>&et-tironien-barré; mult se murt ne deit mie
+<lb n="57"/>aveir grant planté des flors.
+<lb n="58"/>Mais cele qui &mlt-tilde-moult; manjue
+<lb n="59"/>et pou travaille, celle en a moult
+<lb n="60"/>par droit s’ele seine deit estre
+</lem> 
+<rdg wit="#N">e a la foiz de ceo que la femme manjue poie e travaille mout e mout sue. Car ceo ceo dist <persName>Rufus</persName>, que femme que mout travaille mout se muet ne deit aver grant plenté de plurs, mais cele que mout manjue e boit e poi travaille deit mout aver per dreit, a la foiz de ceo que les humours sunt espesses, egluoses e ne poent issir</rdg>
+<rdg wit="#W">et a la foiz porce que poi menga ce et la foiz porce que poi mengu ce et la foi foiz porce que poi travaille et mout s'esmont. Car ce dit <persName>Rufus</persName>, li bon mestre, que famme qui mout travaille ne doit avoir grant plenté de fleurs, mes cele qui mout mengue e poi travaille en a mout.</rdg><witDetail wit="#W">Note de lecture dans la marge droite qui corrige peut-être <hi rendition="em">s'esmont</hi> en <hi rendition="em">moinet</hi> (?).</witDetail>
+</app>
+<note corresp="#TrotLat"><hi rendition="em">[...] uel quia deliciose comedunt, uel quia ex aliquo labore multum sudant, sicut testatur <persName>Ruffus</persName> et <persName>Galyenu</persName>s: mulier que se non exercet multum, necesse est quod habundet in multis menstruis ad hoc, ut sana existet.</hi>. Passage partiellement corrompu et lacunaire dans l'ensemble de la tradition fr. Nous avons ainsi préféré ne pas le reconstruire et conserver la version (toutefois problématique) du seul témoin S.</note>
+.
+</p>
+<p xml:id="TrotulaPr1-ALMA_prologue_0.7">
+<label>[0.7]</label>
+<note>Notes de lecture marginales, à l'encre brune, dans la marge droite du f. 247rb du ms. S, en correspondance du § 0.7 (<hi rendition="em">¶ pour quoy fame / perdent leurs / fleurs / Et les maladie / qu'il en reçoivent / Et la cure</hi>).</note>
+<lb n="61"/>À la fiee les pert feme pour
+<lb n="62"/>ce ke li sanc al cors refroide
+<lb n="63"/>&et-tironien-barré; deseche plus <choice><corr resp="#ed"/><sic>plus</sic></choice> que
+<app>
+<lem wit="#S">il</lem>
+<rdg wit="#N #W">ele</rdg>
+</app>
+<lb n="64"/>ne devroit, à la fiee de ce que
+<lb n="65"/>li sanc ist del cors par altre
+<lb n="66"/>liu, com de
+<app>
+<lem wit="#S #W">cele</lem>
+<rdg wit="#N">celui</rdg>
+</app>
+ki a le fi ou
+<lb n="67"/>d’
+<app>
+<lem wit="#S #W">icele</lem>
+<rdg wit="#N">celui</rdg>
+</app>
+que li nés seigne
+<w>sou<lb n="68"/>vent</w> ou de
+<app>
+<lem wit="#S">cele</lem>
+<rdg wit="#N">celui</rdg>
+</app>
+<app>
+<lem wit="#S #N">ki le sanc
+<lb n="69"/>escopist</lem>
+<rdg wit="#W">qui gete sanc por la boche</rdg><witDetail wit="#W">Leçon adiaphore banalisée isolée de W contre SN</witDetail>
+</app>
+<note corresp="#TrotLat"><hi rendition="em">aut per sputum</hi>. TrotLat ajoute également <hi rendition="em">aut per emorroidas</hi>, omis dans la tr. fr.</note>.
+À la fiee les
+ <app>
+ <lem wit="#S #N">
+ pert
+</lem> 
+ <rdg wit="#W">por</rdg><witDetail wit="#W">Note de lecture interlinaire qui corrige <hi rendition="em">por</hi> en ajoutant <hi rendition="em">a</hi> et <hi rendition="em">t</hi></witDetail>
+</app> 
+
+<w>fe<lb n="70"/>me</w> par ire &et-tironien-barré; par grant
+<w>du<lb n="71"/>el</w>
+<app>
+<rdgGrp>
+<lem wit="#S #N">ou par paor grant
+<w>univ&tilde-vertical-er;<lb n="72"/>selment</w>.
+<note>Notes de lecture marginales, à l'encre brune, dans la marge droite du f. 247rb du ms. S.</note>
+ Se feme les pert
+ <pb n="247v" type="247" subtype="v"/><cb n="c"/>
+<lb n="1"/>longuement, seure puet
+<lb n="2"/>estre de grant enfermetez.
+<lb n="3"/>S'orine entorne a verdor ou
+<lb n="4"/>à roior
+<app>
+<lem wit="#S"/>
+<rdg wit="#N">u a neiror, ce est de neire color</rdg><witDetail wit="#N">ajoute N</witDetail>
+</app>
+&et-tironien-barré; à la fiee en rubor
+<lb n="5"/>de char fresche <app>
+<lem wit="#S"/>
+<rdg wit="#N">laveure</rdg><witDetail wit="#N">ajoute N</witDetail>
+</app>
+</lem>
+</rdgGrp>
+<rdg wit="#W"/><witDetail wit="#W">om. W contre SNTrotLat</witDetail>
+</app>
+<note corresp="#TrotLat"><foreign xml:lang="lat">Nam urina quandoque earum uertitur in ruborem, uel in colorem loture carnis recentis. Vnde quandoque in uiriditatem uel liuiditatem aut in colorem qualis est color graminis facies earum mutatur</foreign>. N conserve la leçon la plus proche de l'original latin.</note>
+.
+</p>
+</div>
+<div xml:id="TrotulaPr1_I"><!-- [I. De retentione menstruorum] -->
+<head><label>[I]</label> [De retentione menstruorum]</head>
+<!-- Collation chapitre I -->
+<note>S omet le § I.15. N conserve le seul paragraphe I.8. W conserve seulement les §§ I.16 et I.17, précédé de la rubrique <hi rendition="em">A feur a pendre a fleurs avoir</hi> (fol. 47va)</note>
+<p xml:id="TrotulaPr1-ALMA_I.8">
+<label>[I.8]</label>
+<lb n="5"/>Se la feme
+<lb n="6"/>est maigre,
+<app>
+<lem wit="#S">s’ele a mestier de</lem>
+<rdg wit="#N">si lui covient</rdg>
+</app>
+<app>
+<lem><lb n="7"/>seignier, face se</lem>
+<rdg wit="#N"/><witDetail wit="#N">Saut du même au même</witDetail>
+</app>
+seignier de
+<lb n="8"/>la veine del pié soz la
+<w>chivil<lb n="9"/>le</w>, un jor de l’un pié &et-tironien-barré; altre
+<lb n="10"/>jor de l’altre
+<app>
+<lem wit="#S"/>
+<rdg wit="#N">pié</rdg>
+</app>,
+selonc ice ke ele
+<lb n="11"/>porra souffrir, ker en tote
+<lb n="12"/>enfermeté deit l’un prendre
+<lb n="13"/>garde de la force del malade
+<lb n="14"/>&et-tironien-barré; garder ke l’on nel afeblit
+<lb n="15"/>trop.
+</p>
+<p xml:id="TrotulaPr1-ALMA_I.9">
+<label>[I.9]</label>
+<persName>Galien</persName> conte en un
+<w>su<lb n="16"/>en</w> livre d’une feme ki avoit
+<lb n="17"/>perdu ses flors par quatre
+<lb n="18"/>mois
+<note type="TrotLat">.ix. menses</note>,
+si devint &mlt-tilde-moult; maigre
+<lb n="19"/>&et-tironien-barré; perdi tote la volenté del
+<lb n="20"/>mangier, &et-tironien-barré; il la seigna par
+<lb n="21"/>trois jors. Le premerain jor,
+<lb n="22"/>entraist il dous livres
+<note type="TrotLat">TrotLat ajoute <hi rendition="em">pede primo</hi>.</note>
+, le
+<w>se<lb n="23"/>cont</w> jor, el altre pié, .j. livre,
+<lb n="24"/>le tierz jors del premerein pié
+<lb n="25"/>wet onces. En un pou de
+<w>ter<lb n="26"/>me</w> li revint la char &et-tironien-barré; la
+<w>co<lb n="27"/>lor</w> com ançois avoit esté.
+</p>
+<p xml:id="TrotulaPr1-ALMA_I.10">
+<label>[I.10]</label>
+//<lb n="28"/>Cele feme qui souvent
+<w>costi<lb n="29"/>ve</w> &et-tironien-barré; pert ses flors, ele det
+<lb n="30"/>prendre poisun ou pilles ou
+<lb n="31"/>letuaires. Aguisiez selonc ice
+<lb n="32"/>qu’ele porra souffrir, &et-tironien-barré; puis
+<lb n="33"/>seignier, &et-tironien-barré; puis baignier. Et
+<lb n="34"/>aprés le baing boive del
+<w>cala<lb n="35"/>ment</w> ou de nepite ki soit
+<lb n="36"/>cuite en miel ou ait les wet
+ <pb n="247v" type="247" subtype="v"/><cb n="d"/>
+<lb n="37"/>partie d'eve &et-tironien-barré; la nuvieme de
+<lb n="38"/>miel. Sovent se baint et &aps-tilde-aprés;
+<lb n="39"/>le baing boive .ij. deniers
+<w>pe<lb n="40"/>sant</w> de diatessaron &et-tironien-barré; un
+<w>de <lb n="41"/>nier</w> pesant de castoire o eve
+<lb n="42"/>&et-tironien-barré; o miel.
+</p>
+<p xml:id="TrotulaPr1-ALMA_I.11">
+<label>[I.11]</label>
+<lb n="42"/>Diatessaront est
+<w>fa<lb n="43"/>it</w> de quatre especes de
+<w>mir<lb n="44"/>re</w>, de aristologie roonde, de
+<lb n="45"/>genciene, de baie. De ces quatre
+<lb n="46"/>i doit l’on metre à un peis et
+<lb n="47"/>puis le miel cuit la poison
+<lb n="48"/>que l’en doit doner à feme si
+<lb n="49"/>doit estre gerapigre ou
+<w>iera<lb n="50"/>logodion</w>.
+</p>
+<p xml:id="TrotulaPr1-ALMA_I.12">
+<label>[I.12]</label> 
+Totes les choses ki
+<lb n="51"/>funt bien pissier valent
+<w>cui<lb n="52"/>tes</w> o le vin &et-tironien-barré; bevez ou
+<w>ense&tilde-nasale-m;<lb n="53"/>ble</w> ou sengle.
+</p>
+<p xml:id="TrotulaPr1-ALMA_I.13">
+<label>[I.13]</label>
+<lb n="53"/><persName>Galien</persName> dit que
+<lb n="54"/>la mere erbol triblee &et-tironien-barré; beive
+<lb n="55"/>o le vin valt molt. &et-tironien-barré; à la fiee
+<lb n="56"/>revalt se ele est cuite en eve,
+<lb n="57"/>&et-tironien-barré; beive en baing &et-tironien-barré; moult
+<lb n="58"/>i valt. Se ele est vert triblee
+<lb n="59"/>&et-tironien-barré; hee sor le venre soz l’omblil,
+<lb n="60"/>ou se la feme la cuit en un
+<lb n="61"/>pot, si la mete chaude soz soi,
+<lb n="62"/>si siee sor une chaiere percee,
+<lb n="63"/>si se coevre bien de dras ke
+<lb n="64"/>la chalor envoist vers la
+<w>mar<lb n="65"/>riz</w>.
+</p>
+<p xml:id="TrotulaPr1-ALMA_I.14">
+<label>[I.14]</label>
+<lb n="65"/>&et-tironien-barré; moult valt la mere
+<w>er<lb n="66"/>bol</w> à prendre &et-tironien-barré; les altres
+<lb n="67"/>erbes desus escrites ou sengles
+<lb n="68"/>ou ajostees et quirre les en
+<lb n="69"/>eve &et-tironien-barré; emplier une taeie d’
+<w>o<lb n="70"/>rellier</w> de line carpie &et-tironien-barré; moilliee
+<lb n="71"/>en icel jus &et-tironien-barré; metre chalt al
+<lb n="72"/>ventre &et-tironien-barré; sovent.
+</p>
+<note corresp="#TrotLat">La traduction française omet le § I.15 : <hi rendition="em">Item morsus galline in testa coctus et superpositus menstrua provocat.</hi></note>
+<p xml:id="TrotulaPr1-ALMA_I.16">
+<label>[I.16]</label>
+Poudre
+ <pb n="248r" type="248" subtype="r"/><cb n="a"/>
+<lb n="1"/>moult vaillant as flors aveir.
+<lb n="2"/>Prenge l’on de flambeie &et-tironien-barré; de
+<w>ci<lb n="3"/>ve</w> &et-tironien-barré; de mirre &et-tironien-barré; de castoire et
+<lb n="4"/>de centoine, de chacune une l.,
+<lb n="5"/>&et-tironien-barré; de savine .ij. l., &et-tironien-barré; de diptan
+<lb n="6"/>.j. l.; si face l’on del tout poldre,
+<lb n="7"/>si en doint l’on une fiee une
+<w>un<lb n="8"/>ce</w> en eve ou la sauge soit cuite
+<lb n="9"/>&et-tironien-barré; la rue &et-tironien-barré; ce al baing.
+</p>
+<p xml:id="TrotulaPr1-ALMA_I.17">
+<label>[I.17]</label>
+<note>Note de lecture sous la forme d'idéogramme en forme de fleur dans le ms. S (marge gauche, f. 248ra).</note>
+Se la
+<lb n="10"/>marriz est si
+<app>
+<lem wit="#S">endurcie</lem>
+<rdg wit="#W">entorse</rdg>
+</app>
+ke les
+<lb n="11"/>flors ne puissent venir
+<app>
+<lem>o ices<lb n="12"/>mecines</lem>
+<rdg wit="#W">si prenge l'en bonnes medecines</rdg>
+</app>
+ , si prenge fiel de tor,
+<lb n="13"/>ou altre fiel, et poudre de vitre
+<lb n="14"/>o le jus d’isope, si mesle l’on
+<w>en<lb n="15"/>semble</w>. Si meslez
+ <app>
+ <lem wit="#S">
+ line carpie
+</lem> 
+ <rdg wit="#W">laine carpie</rdg><witDetail wit="#W">Note de lecture interlinéaire qui ajoute un <hi rendition="em">h</hi> à <hi rendition="em">carpie</hi></witDetail>
+</app> 
+ ,
+<lb n="16"/>&et-tironien-barré; puis la trece l’on ensemble <!-- entité q(u’e)-->
+<lb n="17"/>le soit alques longue &et-tironien-barré; roide,
+<lb n="18"/>ke l’on la puisse metre en la
+<lb n="19"/>naisance &et-tironien-barré; quant ele
+ <app>
+ <lem wit="#S">
+iert
+</lem> 
+ <rdg wit="#W"/><witDetail wit="#W">Note de lecture interlinéaire qui ajoute <hi rendition="em">sera</hi></witDetail>
+</app> 
+
+<w>tre<lb n="20"/>ciee</w>, si la mete l’on ens.
+<app>
+<lem wit="#S">Ice a
+<lb n="21"/>noun pessaire</lem>
+<rdg wit="#W">Ice i vaut molt</rdg>
+</app>
+.
+</p>
+<p xml:id="TrotulaPr1-ALMA_I.18">
+<label>[I.18]</label>
+Altre en fait
+<lb n="22"/>l’on de la mesure al membre
+<lb n="23"/>à l’home si est troés si mete l’on
+<lb n="24"/>la mecine dedenz &et-tironien-barré; o ice la met
+<lb n="25"/>l’on enz si come o un distraire.
+</p>
+</div>
+<div xml:id="TrotulaPr1-ALMA_II"><!-- [II. De paucitate menstruorum] -->
+<head><label>[II]</label>[De paucitate menstruorum]</head>
+<!-- Collation chapitre II -->
+<note>Les paragraphes II.20 et II. 21 sont inversés dans S. N omet le chapitre II complètement. W conserve, dans cet ordre, seulement les §§ II.19 et II.21, précédés de la rubrique <hi rendition="em">A famme qui ne pout avoir pomon</hi> (fol. 47vb)</note>
+<p xml:id="TrotulaPr1-ALMA_II.19">
+<label>[II.19]</label>
+<app>
+<lem wit="#S">
+<lb n="26"/>¶ Feme ki pou a de ses flors,
+<lb n="27"/>&et-tironien-barré; ce a travail &et-tironien-barré; à dolor,</lem> 
+<rdg wit="#W"/>
+</app>
+prenge
+<lb n="28"/>l’on antoine &et-tironien-barré; vetoine &et-tironien-barré; <!--ST: corriger en purgie? VM : Mentha pulegium, Plante aromatique du genre des menthes, utilisée en infusion comme stimulant et antispasmodique (CNRTL). Referencée dans le DEAF sous Pulegium. Dans le paragraphe suivant la même plante est citée sous la dénomination de "mente poliol".-->
+<w>pule<lb n="29"/>gie</w>, de chacun une puingnee,
+<lb n="30"/>si les cuise ll’on
+<note>Ms. S <hi rendition="em">cuisellon</hi>; cp. pron. pers. <hi rendition="em">il</hi>, m.sg. c.r. obj.i. <hi rendition="em">lli</hi>, DEAF I 59,17 (et f.sg. <hi rendition="em">lle</hi>, DEAF I 61,30; f.pl. <hi rendition="em">lles</hi>, DEAF I 62.27).</note>
+en ewe ou en
+<lb n="31"/>vin tant ke les deus parz
+<w>so<lb n="32"/>ient</w> escuites del jus, et la
+<w>tier<lb n="33"/>ce</w> remainne. Puis la cole l’on
+<lb n="34"/>parmi un drap,
+<lb n="35"/>si boive l’on
+<app>
+<lem wit="#S"><lb n="36"/>o fume terrestre</lem>
+<rdg wit="#W">a son terme</rdg>
+</app>
+ .
+</p>
+<p xml:id="TrotulaPr1-ALMA_II.21">
+ <label>[II.21]</label>
+ ¶
+ <app>
+ <lem wit="#S">Altre</lem>
+ <rdg wit="#W">Item</rdg>
+</app> 
+ .
+<pb n="248r" type="248" subtype="r"/><cb n="b"/>
+ <lb n="37"/>Prengne l’on la rue mente
+ <lb n="38"/>poliol, de chascun une poignee,
+ <lb n="39"/>
+ <app>
+ <lem wit="#S">de la sauge, tres</lem>
+ <rdg wit="#W">.iii. cimes de sauge</rdg>
+</app> 
+ , &et-tironien-barré; <choice><corr resp="#ed"/><sic>&et-tironien-barré;</sic></choice> un
+ <w>plan<lb n="40"/>çon</w> de roge
+ <app>
+ <lem wit="#S">colet</lem>
+ <rdg wit="#W">cho</rdg>
+</app> 
+ , &et-tironien-barré; tres
+ <w>chi<lb n="41"/>ef</w> de porez, si les cuise l’on
+ <w>en<lb n="42"/>semble</w> en un nuef pot, se
+ <lb n="43"/>li doint l’on à boivre &et-tironien-barré; ce &aps-tilde-aprés;
+ <lb n="44"/>le baingn.
+</p> 
+ <p xml:id="TrotulaPr1-ALMA_II.20">
+<label>[II.20]</label> <!-- VM question pour M. Möhren - unités de mesure -->
+¶ Altre. A feme
+<lb n="45"/>ki longuement les a perdu,
+<lb n="46"/>prenge l’on del recipontic deus
+<lb n="47"/>deniers pesant &et-tironien-barré; maille, et
+<lb n="48"/>de l'altunesie <!--ST [ou altimesie ou avec c?]; en tout cas: ne pas altumesie! VM : pas attesté dans le DEAF, en lat. arthimesie, soit plante appartenant à la famille des Astéracées, proche de la chicorée, du génépi, du cynar, de l'absinthe... C'est bon, quoi ! Et même tout à fait digeste ! :-)-->seche, &et-tironien-barré; del
+<w>poi<lb n="49"/>vre</w> de une de l., si en face
+<lb n="50"/>l’on poldre, s’il solde l’on od mi
+<lb n="51"/>el cuit si li doint l’on la nuit
+<lb n="52"/>&et-tironien-barré; le matin par trois jorz si
+<lb n="53"/>li doinst l’on à boivre &et-tironien-barré; al
+<lb n="54"/>suer la coevre l’on bien <!-- entité q(u’e)le-->
+<lb n="55"/>sue.
+</p>
+<p xml:id="TrotulaPr1-ALMA_II.22">
+<label>[II.22]</label>
+¶ Altre esprove.
+<w>Pren<lb n="56"/>gne</w> l’on la racine del glaiol
+<lb n="57"/>&et-tironien-barré; la racine de la
+<w>guimau<lb n="58"/>ve</w> &et-tironien-barré; de luvesche &et-tironien-barré; la
+<w>nepi<lb n="59"/>te</w>, si les cuise l’on en vin, si
+<lb n="60"/>doint l’on à boivre à la feme.
+</p>
+<p xml:id="TrotulaPr1-ALMA_II.23">
+<label>[II.23]</label>
+<lb n="61"/>¶ Altre. Savine &et-tironien-barré; racine
+<lb n="62"/>de ache, fanoil, luvesche,
+<w>perre<lb n="63"/>sil</w> cuise l’on en vin, si li doint
+<lb n="64"/>l’on à boivre.
+</p>
+<p xml:id="TrotulaPr1-ALMA_II.24">
+<label>[II.24]</label>
+&et-tironien-barré; taneisie
+<lb n="65"/>et cerfuoil &et-tironien-barré; altimesie frite
+<lb n="66"/>od burre li mete l’on a l’
+<w>um<lb n="67"/>blil</w>.
+</p>
+<p xml:id="TrotulaPr1-ALMA_II.25">
+<label>[II.25]</label>
+¶ Altre, ke li uns li
+<w>mi<lb n="68"/>res</w> fist à la reine de France.
+<note corresp="#TrotLat"><hi rendition="em">in regione Franciae.</hi>Il s'agit peut-être d'une faute d'archétype.</note>
+<lb n="69"/>Gingivre &et-tironien-barré; fueille de lorier
+<lb n="70"/>&et-tironien-barré; de savine tribla un petit,
+<lb n="71"/>si les mit en .j. pot sor les
+<w>char<lb n="72"/>bon</w> vis &et-tironien-barré; ele sist sor une sele
+<lb n="73"/>perciee. Ke li funs vint a la
+ <w>nai<pb n="248v" type="248" subtype="v"/><cb n="c"/><lb n="1"/>sance</w>, si en ot asez, mais
+<lb n="2"/>l’on se doit bien couvrir de
+<lb n="3"/>dras &et-tironien-barré; les cuisses que li
+<lb n="4"/>funs viengne à la
+<w>naisan<lb n="5"/>ce</w>. Et ki sovent fait ice
+<lb n="6"/>les estuves, si li besoigne
+<lb n="7"/>oindre sa naisance dedenz
+<lb n="8"/>d’uile rosat, k’ele ne s’
+<w>eschau<lb n="9"/>de</w> trop.
+</p>
+<p xml:id="TrotulaPr1-ALMA_II.26">
+<label>[II.26]</label>
+Icest estuve rest
+<lb n="10"/>bone à faire de canele et
+<lb n="11"/>de anet &et-tironien-barré; de flambeie et
+<lb n="12"/>de nepite &et-tironien-barré; de calament et
+<lb n="13"/>de mente, ou ensemble ou
+<lb n="14"/>de quel que soit par soi.
+</p>
+<p xml:id="TrotulaPr1-ALMA_II.27">
+<label>[II.27]</label>
+<lb n="15"/>Garses i valent moult &et-tironien-barré; à
+<lb n="16"/>haut d’ome e la seigniee de
+<lb n="17"/>la main i nuist.
+</p>
+<p xml:id="TrotulaPr1-ALMA_II.28">
+<label>[II.28]</label>
+Oignons et
+<lb n="18"/>porez &et-tironien-barré; eschaloignes &et-tironien-barré; senue
+<lb n="19"/>&et-tironien-barré; poivre &et-tironien-barré; comin &et-tironien-barré; alz et
+<lb n="20"/>cerfoil &et-tironien-barré; poisson de eve
+<w>cora&tilde-nasale-n;<lb n="21"/>te</w> od escherdes &et-tironien-barré; od blanche
+<lb n="22"/>char sunt bon à mangier.
+<lb n="23"/>Li forz vins blans est bons
+<lb n="24"/>à boivre, se la feme n’a fievre
+<lb n="25"/>ne dolor del chief, ker à
+<w>tou<lb n="26"/>te</w> fievre est li vins malvés.
+</p>
+</div>
+<div xml:id="TrotulaPr1-ALMA_III"><!-- [III. De nimio fluxu menstruorum] -->
+<head><label>[III]</label>[De nimio fluxu menstruorum]</head>
+<!-- Collation chapitre III -->
+<note>Le chapitre III est omis par N et lacunaire dans W, qui omet les §§ III.37-44. Le § III.34 est également omis et le § III.33 est fortement lacunaire. Dans W rubrique <hi rendition="em">A ce que fame a trop de flors</hi> (fol. 47vb).</note>
+<p xml:id="TrotulaPr1-ALMA_III.29">
+<label>[III.29]</label>
+<note>Notes de lecture marginales, à l'encre brune, dans la marge gauche du f. 248c du ms. S, en correspondance du § III.29 (collation avec TrotFr ou TrotLat ?).</note>
+<lb n="27"/>
+<app>
+<lem wit="#S">Ce ke</lem>
+<rdg wit="#W">A ce que f.</rdg>
+</app>
+la feme
+<lb n="28"/>a trop de ses
+<lb n="29"/>flors,
+<app>
+<lem wit="#S">
+apele l’on <foreign xml:lang="lat">fluxum
+<lb n="30"/>sanguinis</foreign> selonc latin et
+<lb n="31"/>en romanz le puet l’on apeler
+<lb n="32"/>sorondement de sanc. Ice <w>avi
+<lb n="33"/>ent</w></lem>
+<rdg wit="#W"/>
+</app>
+à la fiee de ce ke les
+<w>vei<lb n="34"/>nes</w> de la marriz sunt ouvertes
+<lb n="35"/>et la fiee crievent les veines.
+<lb n="36"/>&et-tironien-barré; ce et quant li sanc est
+ <w>ha<pb n="248v" type="248" subtype="v"/><cb n="d"/><lb n="37"/>stivement</w> roges &et-tironien-barré; clers et
+<lb n="38"/>à la fiee de ke la feme a
+<lb n="39"/>coilli trop sanc de trop
+<w>man<lb n="40"/>gier</w> &et-tironien-barré; de boivre &et-tironien-barré; de trop &gnt-tilde-grant;
+<lb n="41"/>repos si nel puet li cors
+<w>rete<lb n="42"/>nir</w>. À la fiee de ce ke li sanc
+<lb n="43"/>est trop
+ <app>
+ <lem wit="#S">echaufez</lem>
+ <rdg wit="#W">escaufez</rdg><witDetail wit="#W">Note de lecture interl. qui corrige en ajoutant un <hi rendition="em">h</hi>.</witDetail>
+</app> 
+por les
+<app>
+<lem wit="#S"><w>co<lb n="44"/>les</w></lem>
+<rdg wit="#W">choses</rdg>
+</app>
+<note corresp="#TrotLat"><hi rendition="em">fleuma</hi></note>
+qui issent del fiel si se
+<w>mes<lb n="45"/>lent</w> od le sanc si les chaufent
+<app>
+<lem wit="#S"/>
+<rdg wit="#W">trop</rdg>
+</app>
+<app>
+<lem wit="#S">s’il</lem>
+<rdg wit="#W">et le</rdg>
+</app>
+<lb n="46"/>funt boillir si ke les veines
+<lb n="47"/>nel pueent tenir
+<app>
+<lem wit="#S">ne soffrir</lem>
+<rdg wit="#W"/><witDetail wit="#W">om. W</witDetail>
+</app>
+.
+</p>
+<p xml:id="TrotulaPr1-ALMA_III.30">
+<label>[III.30]</label>
+<app>
+<lem wit="#S">
+<lb n="48"/>Se ce ki ist de la naissance est
+<lb n="49"/>de coles, donc torne il à jalnor ;
+<lb n="50"/>se ce est de flieme
+</lem>
+<rdg wit="#W">Se ce est nature de cele durie, se ce est d'enfleure</rdg>
+</app>
+, si est de
+<lb n="51"/>blanche color ;
+<app>
+<lem wit="#S">se ce est de <lb n="52"/>sanc, si est rouge</lem>
+<rdg wit="#W"/>
+</app>
+. Ice
+<app>
+<lem wit="#S">mal</lem> 
+<rdg wit="#W"/>
+</app>
+<w>a<lb n="53"/>vient</w> quant li sanc de tot
+<lb n="54"/>le cors est corrumpuz si nel
+<lb n="55"/>puet retenir pour sa
+<w>malve<lb n="56"/>stie</w> &et-tironien-barré; por ce ke il est
+<w>desna<lb n="57"/>turé</w>.
+<app>
+<lem wit="#S">
+À la fiee avient icest
+<lb n="58"/>mal d’avotier</lem>
+<rdg wit="#W"/>
+</app>
+&et-tironien-barré; de ce muere&tilde-nasale-n;t
+<lb n="59"/>femes souvent. Quant
+<lb n="60"/>icest mal sorprent feme, ele
+<lb n="61"/>pert la color &et-tironien-barré; le mangier
+<lb n="62"/>&et-tironien-barré; en amaigrist. Se longuem&e-tilde-en;t
+<lb n="63"/>li dure, si li torne à ydropisie
+<lb n="64"/>por ce ke le
+<app>
+<lem wit="#W">foie</lem>
+<rdg wit="#S">foi</rdg>
+</app>
+en refreidist
+<lb n="65"/>por le sanc ke il pert ki la
+<lb n="66"/>devroit
+<app>
+<lem wit="#S">
+tenir en sa vertu &et-tironien-barré;
+<lb n="67"/>en sa nature chaude &et-tironien-barré; ne
+<w>pu<lb n="68"/>et</w> muer sa viande en
+<w>natu<lb n="69"/>rel</w> sanc, einz devient eve
+</lem>
+<rdg wit="#W">qui la deroit en nature colour</rdg><witDetail wit="#W">Note de lecture qui corrige dans l'interl. <hi rendition="em">v</hi> à <hi rendition="em">deroit</hi> et ajoute <hi rendition="em">tenir</hi></witDetail>
+</app>
+.
+</p>
+<p xml:id="TrotulaPr1-ALMA_III.31">
+<label>[III.31]</label>
+<lb n="70"/>Cist mals, quant il vient del
+<lb n="71"/>sanc, si estuet la feme
+<w>seigni<lb n="72"/>er</w> ou en la main ou el braz
+ <pb n="249r" type="249" subtype="r"/><cb n="a"/>
+<lb n="1"/>por traire le sanc à mont, ker
+<lb n="2"/>li sanc cort touz tens là où
+<app>
+<lem wit="#S">il a <lb n="3"/>eissu</lem>
+<rdg wit="#W">la ou il trove eissue</rdg>
+</app>
+.
+</p>
+<p xml:id="TrotulaPr1-ALMA_III.32">
+<label>[III.32]</label>
+Se li mals est
+<app>
+<lem wit="#S">de cole</lem>
+<rdg wit="#W">en dyscolor</rdg>
+</app> 
+qui
+<lb n="4"/>ist del fiel, si
+<app>
+<lem wit="#S">estuet la feme tel</lem>
+<rdg wit="#W">comment a la fame fere</rdg>
+</app>
+<lb n="5"/>chose que
+<app>
+<lem wit="#S">
+les coles get de li par
+<lb n="6"/>sueve mecine
+com est trifera
+<lb n="7"/>sarr ?, rosate nouvele od <w>esca
+<lb n="8"/>monie</w> &et-tironien-barré; scrup de violes <!-- ST: l. sirop? VM - question pour M. Möhren : dans TrotLat : succo violarum , cela pourrait être également une unité de mesure (scrupule). -->
+</lem>
+<rdg wit="#W">qui la guarisse de ce mal, c'est crifant, sarracinoisse, aromata novelle, escamonee, cripul</rdg>
+</app>
+.
+<note corresp="#TrotLat">Si colera sit in causa que a felle redundat, detur trifera sarracenica et rosata nouella cum succo uiolarum et scariola.</note>
+</p>
+<p xml:id="TrotulaPr1-ALMA_III.33">
+<label>[III.33]</label>
+Se
+<lb n="9"/>li mals est d’abondance de
+<w>flie<lb n="10"/>me</w> ou de neire cole,
+<app>
+<lem wit="#S">
+getez l’en
+<lb n="11"/>par soeve mecine com est
+</lem>
+<rdg wit="#W">que la noiror soit as fleus, si doit l'en tele medecine fere que li cors s'espurge dou fleume ou de nour cole</rdg>
+</app>
+<w>ge<lb n="12"/>ralogodion</w> ou
+<app>
+<lem wit="#S">feugerole <w>mi<lb n="13"/>se</w></lem>
+<rdg wit="#W">femerole mise</rdg>
+</app>
+en vin ou en cervoise.
+<app>
+<lem wit="#S"/>
+<rdg wit="#W">li doit l'en a boivre</rdg><witDetail wit="#W">W omet la suite du paragraphe.</witDetail>
+</app>
+ &qnt-tilde-quant;
+<lb n="14"/>li cors est espurgiez des
+<w>hu<lb n="15"/>mors</w> dedenz, si estuet reparirer
+<lb n="16"/>as foreines mecines estrei&tilde-nasale-n;gna&tilde-nasale-n;t.
+<lb n="17"/>Si face l’on la feme boivre eve
+<lb n="18"/>tieue où ait <!--ST art?? VM : à mon avis cela serait plutôt "ait", sinon la phrase ne fait pas trop de sens ; lat : in qua cocta sint-->enz cuite l’
+<w>escor<lb n="19"/>ce</w> de pome grenate ou gaule
+<lb n="20"/>ou l’eschale de la noiz gauge
+<lb n="21"/>ou rose ou foille de chaisne ou
+<lb n="22"/>d’eglentier &et-tironien-barré; de ronce et de
+<w>gre<lb n="23"/>moine</w> &et-tironien-barré; de plantein. Totes
+<lb n="24"/>ices choses i valent ou sengles
+<lb n="25"/>ou ensemble puis li doinst l’on
+<lb n="26"/>à boivre choses construistes
+<lb n="27"/>entre viandes com est
+<w>ema<lb n="28"/>tites</w> bien moluz od eve et
+<lb n="29"/>poldre de coral ou pome
+<w>gre<lb n="30"/>nate</w> ou gu&tilde-nasale-m;me arabic ou de la
+<lb n="31"/>pome grenate la flor ou la
+<w>se<lb n="32"/>mence</w> de mirre ou piepol ou
+<lb n="33"/>bol ou la poldre de corne de
+<lb n="34"/>cerf &et-tironien-barré; plantein &et-tironien-barré; centoine &et-tironien-barré;
+<lb n="35"/>sanc de dragon &et-tironien-barré; spondion
+<lb n="36"/>&et-tironien-barré; semence de cooinz.
+</p>
+<p xml:id="TrotulaPr1-ALMA_III.34">
+<label>[III.34]</label>
+<lb n="36"/>Si li doinst
+ <pb n="249r" type="249" subtype="r"/><cb n="b"/>
+<lb n="37"/>l’on à mangier gelines solcies
+<lb n="38"/>en pain &et-tironien-barré; poison friz od laisil
+<lb n="39"/>&et-tironien-barré; pain d’orge. Li poison soient
+<lb n="40"/>de dolce eve qui aient <w>escher
+<lb n="41"/>des</w> &et-tironien-barré; blanche char &et-tironien-barré; od <w>ice
+<lb n="42"/>stes</w> choses soit le tipsan de
+<lb n="43"/>orge sechié &et-tironien-barré; cuit od eve
+<lb n="44"/>de mara puis tant ke il crest
+<lb n="45"/>&et-tironien-barré; puis quant il est refroidié
+<lb n="46"/>si mete l’on laisil ovec s’il colez
+<lb n="47"/>par un drap si li doinst l’on à
+<lb n="48"/>mangier. Sis beivres soit vin
+<lb n="49"/>roges meslé od eve de mare.
+<lb n="50"/>Se il i a racines de plantein
+<lb n="51"/>od le tipsan, tant val mielz.
+</p>
+<p xml:id="TrotulaPr1-ALMA_III.35">
+<label>[III.35]</label>
+<lb n="52"/>Moult valt à cest mal à metre
+<lb n="53"/>la ventose entre les mameles
+<lb n="54"/>sans garse k’ele traie le sanc
+<lb n="55"/>à mont.
+</p>
+<p xml:id="TrotulaPr1-ALMA_III.36">
+<label>[III.36]</label>
+Le jus del plantein od
+<lb n="56"/>la leine carpie i valt molt. Si
+<lb n="57"/>la mete l’on dedenz la
+<w>naisan<lb n="58"/>ce</w> alques
+<app>
+<lem wit="#S">en parfunt</lem>
+<rdg wit="#W">por sorfont</rdg><witDetail wit="#W">Note de lecture dans la marge droite qui corrige en ajoutant <hi rendition="em">par</hi></witDetail>
+</app> .
+</p>
+<note type="TrotLat">Iniciatur succus plantaginis per pessarium. La <hi rendition="em">laine carpie</hi> semble être une innovation de la traduction française.</note>
+<p xml:id="TrotulaPr1-ALMA_III.37-38">
+<label>[III.37-38]</label>
+<app>
+<lem wit="#S">
+Le jus de
+<lb n="59"/>la jobarbe od le viez vin bla&tilde-nasale-n;c
+<lb n="60"/>ou roge est bon à boivre.
+</lem>
+<rdg wit="#W">Si est bonna a boivre vin rouge</rdg>
+</app>
+<note corresp="#TrotLat">Deux paragraphes distincts dans TrotLat. § III.37 : <hi rendition="em">Valet etiam succus semperuiue, si cum uino bibatur albo</hi> ; et § III.38 : <hi rendition="em">Succus etiam peritarie cum uino uale bibitus</hi>.</note>
+</p>
+<p xml:id="TrotulaPr1-ALMA_III.39">
+<label>[III.39]</label>
+<w>Co&tilde-nasale-n;<lb n="61"/>tre</w> icest mal bon est à
+<w>pren<lb n="62"/>dre</w> leine carpie &et-tironien-barré; moillier
+<lb n="63"/>en cel jus &et-tironien-barré; lier sor son
+<w>ve&tilde-nasale-n;<lb n="64"/>tre</w>.
+<note type="TrotLat">Item succus persiccarie ualet super uentrem linitus.La <hi rendition="em">laine carpie</hi> semble, de nouveau, être une innovation de S ou plus en général de la traduction française.</note>
+</p>
+<p xml:id="interpolation_S_1">
+ <label>[Interpolation isolée S n° 1 (fol. 249vb), se situant entre les §§ III.39 et III.40]</label>
+<app>
+ <lem wit="#S">
+ &et-tironien-barré; bon est à cuire la racine
+<lb n="65"/>de la parele en eve ou en vin
+<lb n="66"/>&et-tironien-barré; boivre le jus &et-tironien-barré; bone est à
+<lb n="67"/>boivre leu ou les feuves soient
+<lb n="68"/>cuites.
+</lem> 
+ <rdgGrp>
+ <rdg wit="#N #W"/>
+</rdgGrp> 
+</app> 
+</p> 
+<p xml:id="TrotulaPr1-ALMA_III.40">
+<label>[III.40]</label>
+De rechief prengne l’o&tilde-nasale-n;
+<lb n="69"/>deus lees pieces de lart od sel,
+<lb n="70"/>&et-tironien-barré; puis poldrer desus la poldre
+<lb n="71"/>del coriandre &et-tironien-barré; la semence, et
+<lb n="72"/>la poldre del aluisne, si lit l’on
+ <pb n="249v" type="249" subtype="v"/><cb n="c"/>
+<lb n="1"/>sor le ventre desus l’omblil.
+<note corresp="#TrotLat"><hi rendition="em">et aliud super renes</hi> ajouté dans TrotLat.</note>
+</p>
+<p xml:id="TrotulaPr1-ALMA_III.41">
+<label>[III.41]</label>
+<lb n="2"/>&et-tironien-barré; mete l’on deus emplastres de
+<lb n="3"/>sisimsbre &et-tironien-barré; doinst trible
+<w>en<lb n="4"/>semble</w>, l’un al ventre &et-tironien-barré; l’altre
+<lb n="5"/>as reins.
+</p>
+<p xml:id="TrotulaPr1-ALMA_III.42">
+<label>[III.42]</label>
+Lavez ortie triblee
+<lb n="6"/>od oint &et-tironien-barré; liee al ventre &et-tironien-barré; as
+<lb n="7"/>reins i revalt. &et-tironien-barré; se la fueille
+<lb n="8"/>de l’olive tendre est ovec, tant
+<lb n="9"/>valt mielz.
+</p>
+<p xml:id="TrotulaPr1-ALMA_III.43">
+<label>[III.43]</label>
+Prengne l’on les
+<lb n="10"/>eschales des noiz gauges, sin
+<lb n="11"/>face l’on poldre, si li doinst l’on
+<lb n="12"/>à boivre od l’eve de mare. Puis
+<lb n="13"/>face l’on defens deus
+<w>empla<lb n="14"/>stres</w> od oint, un al ventre
+<lb n="15"/>&et-tironien-barré; altre as reins.
+</p>
+<p xml:id="TrotulaPr1-ALMA_III.44">
+<label>[III.44]</label>
+&et-tironien-barré; face l’on
+<lb n="16"/>poldre des eschales des oes
+<lb n="17"/>dont li poncin sunt eissu, si
+<lb n="18"/>doint l’on à boivre à la feme
+<lb n="19"/>par quatre jourz, chascun jour
+<lb n="20"/>tant com l’on prendra sus, od
+<lb n="21"/>trois deiz od eve de mare
+<w>froi<lb n="22"/>de</w>.
+<note corresp="#TrotLat"><hi rendition="em">per .iii. dies cum aqua tepida, quantum poteris leuare cum digitis duobus.</hi></note> 
+</p>
+</div>
+<div xml:id="TrotulaPr1-ALMA_IV"><!-- [IV. De suffocatione matricis] -->
+<head><label>[IV]</label> [De suffocatione matricis]</head>
+<!-- Collation IV -->
+<note>Le chapitre IV est omis par N et lacunaire dans W : les §§ IV.46 et IV.48 sont fort lacunaires, les §§ IV.49 et IV.50 omis intégralement.</note> 
+<p xml:id="TrotulaPr1-ALMA_IV.45">
+<label>[IV.45]</label>
+<note>Notes de lecture dans le ms. S, fol. 249c, marge gauche (collation avec TrotFr ou TrotLat ?).</note>
+<lb n="23"/>À la fiee
+avient un mal
+<lb n="24"/>à feme ke l’on apele
+<w>ao<lb n="25"/>cheme&tilde-nasale-n;t</w>
+<app><lem wit="#S">de marriz</lem>
+<rdg wit="#W"/>
+</app>
+, que la
+<w>mar<lb n="26"/>riz</w>
+<app><lem wit="#S">
+vait trop amont
+</lem>
+<rdg wit="#W">est trop avant</rdg>
+</app>
+.
+D’icest
+<lb n="27"/>mal
+<app><lem wit="#S"/>
+<rdg wit="#W">avient que</rdg>
+</app>
+pert ele la volenté de
+<w>ma&tilde-nasale-n;<lb n="28"/>gier</w>, li cors li refroide, sovent
+<lb n="29"/>devient pasmee, li pox li
+<w>afe<lb n="30"/>blie</w> &et-tironien-barré; apetice si k’ele pert
+<lb n="31"/>del tot. À la
+ <app>
+ <lem wit="#S">fiee</lem>
+ <rdg wit="#W"/><witDetail wit="#W">Note de lecture interl. qui ajoute <hi rendition="em">foiz</hi></witDetail>
+</app> 
+si torne isi
+<lb n="32"/>ensemble k’ele torne le chief
+<lb n="33"/>sor les genolz, &et-tironien-barré; ele ainuist et
+<lb n="34"/>la bouche li torne &et-tironien-barré; ele estrei&tilde-nasale-n;t
+<lb n="35"/>les denz ensemble &et-tironien-barré; li piz li
+<w>soz<lb n="36"/>lieve</w>.
+</p>
+<p xml:id="TrotulaPr1-ALMA_IV.46">
+<label>[IV.46]</label>
+<app>
+<lem wit="#S">
+<persName>Galien</persName> reconte d’une
+ <w>fe<pb n="249v" type="249" subtype="v"/><cb n="d"/><lb n="37"/>me</w> ki avoit cest mal &et-tironien-barré; avoit
+<lb n="38"/>perdue la parole &et-tironien-barré; le polz &et-tironien-barré;
+<lb n="39"/>estoit altresi come morte et
+<lb n="40"/>nul semblant n’avoit de vie,
+<lb n="41"/>fors un poi de chalt k’ele
+<w>avo<lb n="42"/>it</w> al cuer. Plusors des mires
+<lb n="43"/>cuidoent k’ele fust morte,
+<lb n="44"/>mais il prist leine carpie, si
+<lb n="45"/>li mist à la bouche si la vire&tilde-nasale-n;t
+<lb n="46"/>mouvoir un petit &et-tironien-barré; donc
+<w>so<lb n="47"/>rent</w> k’ele ert vive.</lem>
+<rdg wit="#W"/>
+</app>
+Icest mal
+<lb n="48"/>avient en feme de ce ke <w>abo&tilde-nasale-n;
+<lb n="49"/>de</w> <choice><corr resp="#ed">de</corr><sic/></choice> seme&tilde-nasale-n;ce en li &et-tironien-barré; de ce ke la
+<lb n="50"/>seme&tilde-nasale-n;ce est corrumpue et
+<w>des<lb n="51"/>naturee</w>.
+</p>
+<p xml:id="TrotulaPr1-ALMA_IV.47">
+<label>[IV.47]</label>
+Ice li avient de ce
+<lb n="52"/>kel est longuement sanz ha&tilde-nasale-n;t
+<lb n="53"/>d’ome. Cist mals avient
+<w>so<lb n="54"/>vent</w> à feme
+<app><lem wit="#S">vedue</lem>
+<rdg wit="#W"/>
+</app>
+ki sove&tilde-nasale-n;t
+<lb n="55"/>à esté hantee. &et-tironien-barré; sovent
+<w>ence<lb n="56"/>inte</w> &et-tironien-barré; puis est il longueme&tilde-nasale-n;t
+<lb n="57"/>sanz ice. À la fiee avient
+<lb n="58"/>as puceles, quant eles sunt
+<lb n="59"/>venues à ce qu’eles pueent
+<lb n="60"/>avoir hant d’ome
+<app><lem wit="#S">
+&et-tironien-barré; eles ne l'
+<lb n="61"/>ont,
+</lem>
+<rdg wit="#W"/>
+</app>
+&et-tironien-barré; de ce abonde trop la
+<w>se<lb n="62"/>mence</w> en eles quant la
+<w>na<lb n="63"/>ture</w>
+<app><lem wit="#S">
+les voldreit geter del cors
+<lb n="64"/>par masle.
+</lem>
+<rdg wit="#W">vodroit istre dou cors ausi com home dou cors au maale</rdg>
+</app> 
+De ceste seme&tilde-nasale-n;ce,
+<lb n="65"/>quant ele
+ <app>
+ <lem wit="#S">abonde</lem>
+ <rdg wit="#W">habandone</rdg><witDetail wit="#W">Note de lecture dans la marge droite qui corrige en <hi rendition="em">habunde</hi></witDetail>
+</app> 
+ , ou est
+<w>cor<lb n="66"/>ru&tilde-nasale-m;pue</w> ou desnaturee, monte
+<lb n="67"/>une fume as corneilles
+<note corresp="#TrotLat">collaterales</note>, et
+<lb n="68"/>pour ce k’eles corneis sunt
+<lb n="69"/>monté al cuer &et-tironien-barré; al pomon et
+<lb n="70"/>as altre estrumenz ki
+<w>aper<lb n="71"/>tienent</w> à la voiz, si en pert
+<lb n="72"/>feme la parole. Cist mals
+ <w>avi<pb n="250r" type="250" subtype="recto"/><cb n="a"/><lb n="1"/>ent</w> sovent à feme de ce k’ele
+<lb n="2"/>pert ses flors, &et-tironien-barré; se les flors li
+<lb n="3"/>faillent &et-tironien-barré; la semence li
+<w>sora<lb n="4"/>bonde</w>, donc est pires li mals et
+<lb n="5"/>maiesmement
+<app><lem wit="#S">com il est halt</lem>
+<rdg wit="#W">en juig et en yer <!--VM vérifier le lien DEAF --></rdg><witDetail wit="#W">Pour <hi rendition="em">juig</hi>, cf. DEAF J 727,14 et <ref target="https://deaf.ub.uni-heidelberg.de/lemme/juin">juin</ref>.</witDetail>
+</app>
+.
+</p>
+<p xml:id="TrotulaPr1-ALMA_IV.48">
+<label>[IV.48]</label>
+<app>
+<lem wit="#S">
+<lb n="6"/>La premereine chose de mecine <!-- VM question pour Monsieur Möhren - unités de mesure -->
+<lb n="7"/>di ce mal est ke l’on li frie les
+<lb n="8"/>mains &et-tironien-barré; les piez
+<w>mesurable<lb n="9"/>ment</w>
+</lem>
+<rdg wit="#W">La medecine est tele : l'en doit froter a la feme les mains et le piez</rdg><witDetail wit="#W"><hi rendition="em">froier</hi> avec <hi rendition="em">i</hi> exp. et <hi rendition="em">t</hi> ajouté sur l'interl.</witDetail>
+</app>
+de oile laurin &et-tironien-barré; al nes
+<lb n="10"/>li mete l’on choses de fort odors
+<lb n="11"/>&et-tironien-barré; de contrarioses, com est de
+<lb n="12"/>castoire, &et-tironien-barré; gabanu&tilde-nasale-m;, &et-tironien-barré; poiz, et
+<lb n="13"/>leine arse, &et-tironien-barré; linge drap ars, et
+<lb n="14"/>fumee de poil ars, &et-tironien-barré; de altres
+<lb n="15"/>choses de fort odor.
+<app>
+<lem wit="#S">
+Oile et
+<lb n="16"/>oignement doit l’en metre en
+<lb n="17"/>la naisance ki seient de bon
+<lb n="18"/>odor, com est yrileon, &et-tironien-barré;
+<w>muce<lb n="19"/>leon</w> <choice><corr resp="#ed">et</corr><sic/></choice> nardileon, ker cestes
+<lb n="20"/>choses traient la seme&tilde-nasale-n;ce et
+<lb n="21"/>les flors aval.
+</lem>
+<rdg wit="#W">et de sor l'estuve les de choses de bon odor, comme d'espices, comme elivinum (?), aloe, musge et cevant a tele maladie</rdg>
+</app>
+<app>
+<lem wit="#S">
+Les ventoses
+<w>fa<lb n="22"/>ce</w> l’on metre as eines <!--ST ?? [plutôt eines?; DEAF seulement agn. eine adj. "qui appartient à une personne, à un groupe] (et) sor le VM : C'est l'aine car TrotLat : in inguine. La graphie "eines" du ms. S n'est pas attestée dans le DEAF ni dans AND.-->&et-tironien-barré; sor le
+<lb n="23"/>pegnil, si la doit l’on oindre des
+<lb n="24"/>oingnemenz, &et-tironien-barré; des oiles de bon
+<lb n="25"/>odor dedenz &et-tironien-barré; defors. Si li doint
+<lb n="26"/>l’on al seir diacimi&tilde-nasale-n; <!--ST diacimin(n)/diacimin(um)? VM : je crois que les deux graphies sont possibles, en latin : diaciminum-->od le jus
+<lb n="27"/>de l'ache, ou od le sirup de
+<w>cala<lb n="28"/>ment</w> ,ou od ierapigre, ou
+<lb n="29"/>od le jus del aluisne. Si li doint
+<lb n="30"/>l’on .j. .l. d’agaric od le vin de
+<lb n="31"/>bon odor, l’on doit laver la
+<w>nai<lb n="32"/>sance</w> od l'aluisne cuite, ou de
+<lb n="33"/>quinalt, ou de centoieire, ou
+<lb n="34"/>de anet, ou de kalament, ou
+<lb n="35"/>de nepite. Moult valt à cest
+<lb n="36"/>mal .ij. .l. ou plus, s’il doit l'on
+ <pb n="250r" type="250" subtype="r"/><cb n="b"/>
+<lb n="37"/>destemprer de visquiame, &et-tironien-barré;
+<lb n="38"/>de castoeire, &et-tironien-barré; de blanc poiv&tilde-vertical-re;,
+<lb n="39"/>&et-tironien-barré; de cost, &et-tironien-barré; de mirre, &et-tironien-barré; d’ache,
+<lb n="40"/>&et-tironien-barré; de chascune .j. .l. ou plus
+<lb n="41"/>s’il doit l’on destemprer od
+<lb n="42"/>vin dolz &et-tironien-barré; doner à boivre.
+</lem>
+<rdg wit="#W"/>
+</app>
+</p>
+<p xml:id="TrotulaPr1-ALMA_IV.49">
+<label>[IV.49]</label>
+<lb n="43"/><persName>Justinus</persName>
+ <note corresp="#TrotLat"><persName>Justianus</persName></note>
+li mires co&tilde-nasale-m;manda
+<lb n="44"/>à sechier une cuilleree de
+<w>co<lb n="45"/>min</w> &et-tironien-barré; tribler &et-tironien-barré; doner à
+<lb n="46"/>boivre &et-tironien-barré;, si comanda à pre&tilde-nasale-n;
+<lb n="47"/>dre l’oint del gopil ou de
+<lb n="48"/>chevrol &et-tironien-barré; mesler &et-tironien-barré; faire
+<lb n="49"/>un emplastre &et-tironien-barré; metre
+<w>de<lb n="50"/>sus</w> ou enz od le pessaire.</p>
+<p xml:id="TrotulaPr1-ALMA_IV.50">
+<label>[IV.50]</label>
+<lb n="51"/><persName>Oribasius</persName> co&tilde-nasale-m;manda à cuire
+<lb n="52"/>la racine de germandree,
+<lb n="53"/>&et-tironien-barré; fanoil, &et-tironien-barré; li vins, &et-tironien-barré; le jus
+<lb n="54"/>chalt geter en la naisance.
+<lb n="55"/>&et-tironien-barré; si dist ke mult valt la
+<lb n="56"/>racine de wismave cuite &et-tironien-barré;
+<lb n="57"/>triblee od oint &et-tironien-barré; liee soz l’
+<w>om<lb n="58"/>blil</w>.
+</p>
+</div>
+<div xml:id="TrotulaPr1-ALMA_V"><!-- [V. De descensu matricis] -->
+<head><label>[V]</label>[De descensu matricis]</head>
+<!-- Collation V -->
+<note>Le chapitre V est omis par N et lacunaire dans W (om. §§ V.51 et V.56-58). Dans W, deux titres rubriqués : <hi rendition="em">A la marriz cheoite en aval</hi>, situé au milieu du § V.54 et <hi rendition="em">Medecine esprovee a la marriz cohaite et issue</hi></note>
+<p xml:id="TrotulaPr1-ALMA_V.51">
+<label>[V.51]</label>
+<note>Notes de lecture dans le ms. S, fol. 250b, marge gauche (collation avec TrotFr ou TrotLat ?), en correspondance du début du § V.51.</note>
+<lb n="59"/>Se la marriz avale à
+<w>fe<lb n="60"/>me</w> quant a eu enfant,
+<lb n="61"/>si eschaufe l’on molue, si li
+<lb n="62"/>mete l’on al ventre en une
+<lb n="63"/>taie d’orillier.
+</p>
+<p xml:id="TrotulaPr1-ALMA_V.52">
+<label>[V.52]</label>
+<app>
+<lem wit="#S">
+La marriz
+<w>chi<lb n="64"/>et</w> à la fiee aval &et-tironien-barré; ist de son
+<lb n="65"/>liu &et-tironien-barré; à la fiee ist fors de sa
+<lb n="66"/>naisance. &et-tironien-barré; avient de ce <!-- entité &q-tildé-que;l-->
+<lb n="67"/>est trop amoliee la marriz
+<lb n="68"/>&et-tironien-barré; ist de son liu &et-tironien-barré; par
+<w>enfor<lb n="69"/>cement</w> d’enfanter.
+</lem>
+<rdg wit="#W">A la foiz chiet la martir (?) aval et ist de son leu et a la foiz ist ele hors por la nesance. Ce avient de ce qu'el est amoliee. Icest amoliement et refrosoissement est trop longuement de ce que fame est trop longuement en leu que ele refroroist de sor et por baing de froide eve que per ce amollist la matriz et ist de son leu. A la foiz ist ele por enfelement d'efant.</rdg><witDetail wit="#W">Graphie <hi rendition="em">martir</hi> (?) pour <hi rendition="em">marriz</hi>, avec <hi rendition="em">r</hi> exponctué.</witDetail>
+</app>
+</p>
+<p xml:id="TrotulaPr1-ALMA_V.53">
+<label>[V.53]</label>
+S’ele est
+<lb n="70"/>cheue aval &et-tironien-barré;
+<app>
+<lem wit="#S">ne</lem>
+<rdg wit="#W"/>
+</app>
+soit eissue,
+<app>
+<lem wit="#S"><lb n="71"/>si li mete l’on al nes</lem>
+<rdg wit="#W">si mete le a la fame aucunes</rdg>
+</app>
+especes
+<app>
+<lem wit="#S"/>
+<rdg wit="#W">bonnes</rdg>
+</app>
+<lb n="72"/>de bone odor com est
+<app>
+<lem wit="#S">basme</lem>
+<rdg wit="#W">epybasme</rdg>
+</app>
+,
+ <pb n="250v" type="250" subtype="v"/><cb n="c"/>
+<app>
+<lem wit="#S"><lb n="1"/>espic, folium, storace</lem>
+<rdg wit="#W"/>
+</app>
+, &et-tironien-barré; totes
+<lb n="2"/>choses bien olanz &et-tironien-barré; desouz
+<lb n="3"/>la doit l’on estuver de choses
+<lb n="4"/>de male odor com de leine
+<lb n="5"/>arse, &et-tironien-barré; de linge drap ars
+<app>
+<lem wit="#S"><lb n="6"/>et poiz &et-tironien-barré; opoponac</lem>
+<rdg wit="#W"/>
+</app>
+.
+</p>
+<p xml:id="TrotulaPr1-ALMA_V.54">
+<label>[V.54]</label>
+Se ce avient
+<lb n="7"/>à fame quant ele a
+<app>
+<lem wit="#S">eu</lem>
+<rdg wit="#W"/>
+</app>
+enfa&tilde-nasale-n;t,
+<app>
+<lem wit="#S">ou se</lem> 
+<rdg wit="#W">que</rdg>
+</app>
+<lb n="8"/>la marriz li enfle,
+<w>pren<lb n="9"/>ge</w> l’on leine,
+<app>
+<lem wit="#S">
+si la mete l’on en
+<lb n="10"/>oile &et-tironien-barré; en vin &et-tironien-barré; la face l’on
+<w>pla<lb n="11"/>te</w> &et-tironien-barré; si la mete l’on sor l’omblil
+</lem>
+<rdg wit="#W">a tot le suif, la moilliez en eve ou en vin, si li fetes emplastre, si li metez sus le nombril</rdg>
+</app>
+.
+<lb n="12"/>À la marriz chaoite
+<app>
+<lem wit="#S"/>
+<rdg wit="#W">aval</rdg>
+</app>
+, prenge
+<lb n="13"/>l’on
+<app>
+<lem wit="#S">amoniac</lem>
+<rdg wit="#W">amouracum</rdg>
+</app>
+sil destemp&tilde-vertical-re; l’on
+<lb n="14"/>od le jus
+<app>
+<lem wit="#S">d’une puignee</lem>
+<rdg wit="#W"/>
+</app>
+d’<w>aluis<lb n="15"/>ne</w>, si
+<app>
+<lem wit="#S">
+en oigne l’on le ventre od
+<lb n="16"/>une pene
+</lem>
+<rdg wit="#W">l'en oigniez</rdg>
+</app>
+. Puis prenge l’on
+<lb n="17"/>une puignee de cassie &et-tironien-barré;
+<app>
+<lem wit="#S">altre</lem>
+<rdg wit="#W">autant</rdg>
+</app>
+<lb n="18"/>de rue &et-tironien-barré;
+<app>
+<lem wit="#S">altre d’altunesie</lem>
+<rdg wit="#W">autant de mere herbol</rdg>
+</app>
+, si
+<lb n="19"/>les cuise l’on en vin, si que les
+<lb n="20"/>deus parz soient escuites et
+<lb n="21"/>la tierce
+<app>
+<lem wit="#S">remaigne</lem>
+<rdg wit="#W"/>
+</app>
+, si li doinst
+<lb n="22"/>l’on à boivre.
+</p>
+<p xml:id="TrotulaPr1-ALMA_V.55">
+<label>[V.55]</label>
+Eschaufe l’on bien
+<lb n="23"/>del forment, sil mete l’on à l’
+<w>um<lb n="24"/>blil</w> &et-tironien-barré; al ventre.
+</p>
+<p xml:id="TrotulaPr1-ALMA_V.56">
+<label>[V.56]</label>
+Qua&tilde-nasale-n;t la
+<lb n="25"/>marriz est chaue aval &et-tironien-barré;
+<w>eis<lb n="26"/>sue</w>, si la mete l’on enz et
+<w>pu<lb n="27"/>is</w> si baint l’on la feme en eve
+<lb n="28"/>ou soit cuite la rose ou la flor
+<lb n="29"/>ou l’escorce de la pome
+<w>grena<lb n="30"/>te</w> &et-tironien-barré; galle &et-tironien-barré; mirre &et-tironien-barré; sumac
+<lb n="31"/>&et-tironien-barré; glan &et-tironien-barré; escorce ou foille de
+<lb n="32"/>chaisne. Totes icestes i vale&tilde-nasale-n;t
+<lb n="33"/>&et-tironien-barré; sengles &et-tironien-barré; ajostees.
+</p>
+<p xml:id="TrotulaPr1-ALMA_V.57">
+<label>[V.57]</label>
+Si la
+<lb n="34"/>face l’on estuver ker ce i valt
+<lb n="35"/>molt. <persName>Diacorides</persName> la comande
+<lb n="36"/>estuver de rose seche si ke l’on
+<lb n="37"/>la mete sor la brese ou sor
+ <pb n="250v" type="250" subtype="v"/><cb n="d"/>
+<lb n="38"/>la mete sor la brese ou sor
+<lb n="39"/>les charbon vis en un pot et
+<lb n="40"/>la bose od tot &et-tironien-barré; ele seie sor
+<lb n="41"/>une sele perciee si se coevre
+<lb n="42"/>bien de dras que la fumee
+<lb n="43"/>voit amont en la naisance.
+</p>
+<p xml:id="TrotulaPr1-ALMA_V.58">
+<label>[V.58]</label>
+<lb n="44"/>Sis mangiers soit tout froit
+<lb n="45"/>et sanz poivre &et-tironien-barré; sanz comin
+<lb n="46"/>&et-tironien-barré; sanz tot egrum de fruit
+<lb n="47"/>&et-tironien-barré; maniuce mesles &et-tironien-barré; sorbes
+<lb n="48"/>&et-tironien-barré; cooinz &et-tironien-barré; pomes sures sis
+<lb n="49"/>boivres soit viez vin od eve de
+<lb n="50"/>mare.
+</p>
+<p xml:id="TrotulaPr1-ALMA_V.59">
+<label>[V.59]</label>
+Medecine esprovee à
+<lb n="51"/>la marriz
+<app>
+<lem wit="#S"/>
+<rdg wit="#W">cohaite et</rdg>
+</app>
+eissue :
+<app>
+<lem wit="#S"></lem>
+<rdg wit="#W">prenez la p.</rdg>
+</app>
+de poldre de
+<lb n="52"/>corne de cerf, de foille de lorier,
+<lb n="53"/>de chascun
+<app>
+<lem wit="#S">.j. .l.</lem>
+<rdg wit="#W">.j. once</rdg> <!-- VM question pour M. Möhren - les unités de mesure -->
+</app>
+, de mirre
+<app>
+<lem wit="#S">.j. .l.</lem>
+<rdg wit="#W">.xi. d. <!-- ? VM question pour M. Möhren - unités de mesure -->et maaille pesant, si</rdg>
+</app>
+,
+<lb n="54"/>triblee ensemble &et-tironien-barré; destemprer
+<lb n="55"/>od vin donez li à boivre et
+<lb n="56"/>tantost voit en son lit.
+</p>
+</div>
+<div xml:id="TrotulaPr1-ALMA_VI"><!-- [VI. De motu matricis de suo loco] -->
+<head><label>[VI]</label>[De motu matricis de suo loco]</head>
+<!-- Collation VI -->
+<note>Le chapitre VI est omis par N.</note>
+<p xml:id="TrotulaPr1-ALMA_VI.60">
+<label>[VI.60]</label>
+<note>Notes de lecture dans le ms. S, fol. 250d, marge droite (collation avec TrotFr ou TrotLat ?), en correspondance du début du § VI.60.</note>
+<lb n="57"/>À la fiee se
+<app>
+<lem wit="#S">muet</lem>
+<rdg wit="#W">se fuient</rdg><witDetail wit="#W">graphié en deux mot <hi rendition="em">fui</hi> et <hi rendition="em">ent</hi></witDetail>
+</app>
+la
+<lb n="58"/>marriz
+<lb n="59"/>de son liu si qu’ele ne vait mie
+<lb n="60"/>amont as cornilles, ne aval
+<lb n="61"/>ne chiet, si k’ele eisse &et-tironien-barré;
+<w>neque<lb n="62"/>dent</w> tot est remuee de son
+<lb n="63"/>liu. Issi conoist l’on icest mal
+<lb n="64"/>la dolor est al senestre flanc et
+<lb n="65"/>de la muet la dolor tornant
+<lb n="66"/>amont al ventre ou el emfle,
+<lb n="67"/>si k’ele ne puet trangloter, et
+<lb n="68"/>si a froit, si li tendent les
+<w>mem<lb n="69"/>bres</w> &et-tironien-barré; li ventres li
+<app>
+<lem wit="#S">ruit</lem>
+<rdg wit="#W">remue</rdg>
+</app>
+et
+<lb n="70"/>ele rote.
+</p>
+<p xml:id="TrotulaPr1-ALMA_VI.61">
+<label>[VI.61]</label>
+Prenge l’on
+<app>
+<lem wit="#S"/>
+<rdg wit="#W">la semence</rdg>
+</app>
+de l’ache
+<lb n="71"/>&et-tironien-barré; de
+<app>
+<lem wit="#S">fenugrec</lem>
+<rdg wit="#W">senecon</rdg>
+</app>
+,
+si les trible l’on
+<lb n="72"/>bien &et-tironien-barré; destemp&tilde-vertical-re; od vin, si li doinst
+<lb n="73"/>l’on à boivre.
+</p>
+<p xml:id="TrotulaPr1-ALMA_VI.62">
+<label>[VI.62]</label>
+<app>
+<lem wit="#S">Altre</lem>
+<rdg wit="#W"/>
+</app>
+. Prenge l’on
+ <pb n="251r" type="251" subtype="r"/><cb n="a"/>
+<app>
+<lem wit="#S"><lb n="1"/>agaric &et-tironien-barré; espaute</lem>
+<rdg wit="#W">argaliton et aspacij</rdg>
+</app>
+&et-tironien-barré; la seme&tilde-nasale-n;ce
+<lb n="2"/>de
+<app>
+<lem wit="#S">plantein</lem>
+<rdg wit="#W">planin</rdg><witDetail wit="#W">Note de lecture qui corrige le texte en ajoutant dans l'interl. <hi rendition="em">ta</hi> et en écrivant <hi rendition="em">plantain</hi> en toutes lettres dans la marge gauche</witDetail>
+</app>
+<app>
+<lem wit="#S">&et-tironien-barré; de sarreee</lem>
+<rdg wit="#W"/>
+</app>
+,
+si en
+<lb n="3"/>face l’on poldre del tot si li doinst
+<lb n="4"/>l’on à boivre &et-tironien-barré; od miel cuit.
+</p>
+<p xml:id="TrotulaPr1-ALMA_VI.63">
+<label>[VI.63]</label>
+<lb n="5"/>
+<app>
+<lem wit="#S">À la feme ke</lem>
+<rdg wit="#W">et</rdg>
+</app>
+la marriz
+<w>rema<lb n="6"/>igne</w> en son liu &et-tironien-barré; ke nule
+<w>du<lb n="7"/>rece</w> n'i remaigne. Prenge
+<lb n="8"/>moole de cerf &et-tironien-barré; oint d'oue et
+<lb n="9"/>cire
+<app>
+<lem wit="#S">rovente</lem>
+<rdg wit="#W">beneite</rdg>
+</app>
+&et-tironien-barré; burre, de
+<w>chas<lb n="10"/>cun</w> .ij. .l., puis prenge l’on
+<app>
+<lem wit="#S"><lb n="11"/>fenugrec &et-tironien-barré; li vins</lem>
+<rdg wit="#W">senecon et aluisue</rdg>
+</app>
+sis cuise l’o&tilde-nasale-n;
+<app>
+<lem wit="#S"/>
+<rdg wit="#W">ensemble</rdg>
+</app>
+<lb n="12"/>bien en eve, &et-tironien-barré; puis colez
+<app>
+<lem wit="#S">cel<lb n="13"/>jus</lem> 
+<rdg wit="#W"/>
+</app>
+ <app>
+ <lem wit="#S">parmi</lem>
+ <rdg wit="#W">pormi</rdg><witDetail wit="#W">Note de lecture interl. qui corrige en ajoutant un <hi rendition="em">a</hi></witDetail>
+</app> 
+un drap, s’il metez
+<lb n="14"/>ovec oile d’olive. &et-tironien-barré; les choses
+<lb n="15"/>desus nomees, si cuisiez tot
+<lb n="16"/>ensemble à petit feu tant ki
+<lb n="17"/>soient bien cuit &et-tironien-barré; puis
+<app>
+<lem wit="#S">
+la
+<lb n="18"/>mete enz od le pessaire, ker
+<lb n="19"/>ce valt à plusors maus ki
+<w>a<lb n="20"/>vienent</w> à la marriz
+</lem>
+<rdg wit="#W">les metez en la nessance</rdg>
+</app>
+.
+</p>
+</div>
+<div xml:id="TrotulaPr1-ALMA_VII"><!-- [VII. De nimia caliditate matricis] -->
+<head><label>[VII]</label>[De nimia caliditate matricis]</head>
+<!-- Collation VIII -->
+<note>Le chapitre VIII est omis par N.</note>
+<p xml:id="TrotulaPr1-ALMA_VII.64">
+<label>[VII.64]</label>
+À la fiee
+<lb n="21"/>avient à la marriz un mauls
+<lb n="22"/>&et-tironien-barré; une echaufoison ke l’on apele
+<app>
+<lem wit="#S">boillement de marriz</lem>
+<rdg wit="#W">buel <!-- VM question pour M. Möhren : mot illisible + unités de mesure -->de mariz</rdg><witDetail wit="#W">Le copsite ajoute sur la ligne <hi rendition="em">la</hi> et exponctue le <hi rendition="em">t</hi> à la graphie fautive <hi rendition="em">matriz</hi></witDetail>
+</app>
+<lb n="23"/>, ke si est
+<lb n="24"/>chaude dedenz com s’il i eust
+<w>bre<lb n="25"/>ses</w>. Encotre icest mal
+<app>
+<lem wit="#S"><w>estu<lb n="26"/>et</w> prendre</lem>
+<rdg wit="#W">prendre estoit</rdg>
+</app>
+<app>
+<lem wit="#S">.l. .l. &et-tironien-barré; d'opie</lem>
+<rdg wit="#W">.i. once d'ysope</rdg>
+</app>
+, et de
+<lb n="27"/>sain d'oue
+<app>
+<lem wit="#S">.ij. .l.</lem>
+<rdg wit="#W">.ij. onces</rdg>
+</app>
+,
+<app>
+<lem wit="#S">de la cire de miel
+<lb n="28"/>de terre .iij. .l.</lem>
+<rdg wit="#W">de la cire du miel, .iij. onces, de terre, .j. once</rdg>
+</app>
+,
+<app>
+<lem wit="#S">de oile</lem>
+<rdg wit="#W">de miel</rdg>
+</app>
+, &et-tironien-barré; les
+<w>al<lb n="29"/>buns</w> des .ij. oes, &et-tironien-barré; creie &et-tironien-barré; let
+<lb n="30"/>de feme
+<app>
+<lem wit="#S"/>
+<rdg wit="#W">moillie ? <!-- VM question pour Monsieur Möhren - a suscrit mais comment développer l'abr. ? -->mariee ovec</rdg>
+</app>
+.
+<app>
+<lem wit="#S">
+Si mete l’on ensemble
+<lb n="31"/>&et-tironien-barré; puis li mete l’on enz od le
+<lb n="32"/>pessaire
+</lem>
+<rdg wit="#W">et puis metez dedenz la nessance</rdg>
+</app>
+.
+</p>
+</div>
+<div xml:id="TrotulaPr1-ALMA_VIII"><!-- [VIII. De apostemate matricis] -->
+<head><label>[VIII]</label>[De apostemate matricis]</head>
+<!-- Collation VIII -->
+ <note>Le chapitre VIII est omis par N. W omet les §§ VIII.67 et VIII.68. Dans W rubrique <hi rendition="em">A dous ou a bouces meurer face tel emplastre</hi> devant le § VIII.69. Pour <hi rendition="em">dous</hi> et <hi rendition="em">bouce</hi> cf. DEAFPré <ref target="https://deaf.ub.uni-heidelberg.de/lemme/dos">dos</ref> et <ref target="https://deaf.ub.uni-heidelberg.de/lemme/boce1">boce1</ref>.</note>
+<p xml:id="TrotulaPr1-ALMA_VIII.65">
+<label>[VIII.65]</label>
+¶ À la fiee naissent
+<lb n="33"/>en la marriz enfleures &et-tironien-barré; clous
+<lb n="34"/>&et-tironien-barré; boces de plusors manieres. Se
+<lb n="35"/>
+ <app>
+ <lem wit="#S">li clor</lem>
+ <rdg wit="#W">le clo</rdg>
+</app> 
+est de la cole ki
+ <app>
+ <lem wit="#S">ist</lem>
+ <rdg wit="#W">est</rdg>
+</app> 
+del fiel,
+<lb n="36"/>donc est
+ <app>
+ <lem wit="#S">ou crancre</lem>
+ <rdg wit="#W">chaut</rdg>
+</app> 
+ ou fievre.
+ <pb n="251r" type="251" subtype="r"/><cb n="b"/>
+<lb n="37"/>À la fiee est il de grosses humors,
+<lb n="38"/>com d’emfleure
+ <app>
+ <lem wit="#S">&et-tironien-barré;</lem>
+ <rdg wit="#W"/>
+</app> 
+de noire cole
+<lb n="39"/>&et-tironien-barré; donc
+ <app>
+ <lem wit="#S">
+ enfle il gros &et-tironien-barré; dur les
+<lb n="40"/>hanches,, li endurcissent &et-tironien-barré;
+<w>ape<lb n="41"/>santissent</w>
+&et-tironien-barré; les cuisses.
+ </lem> 
+ <rdg wit="#W">enflent les voines et les cuisses et apeticent</rdg>
+</app> 
+&et-tironien-barré; tel i a
+<lb n="42"/>ki est de ventosité ou de colp
+<lb n="43"/>ou de altre bleceure, &et-tironien-barré; à la fiee
+<lb n="44"/>en pert ele ses flors. Se
+ <app>
+ <lem wit="#S">
+la
+<w>do<lb n="45"/>lor</w>
+</lem> 
+ <rdg wit="#W">li clos</rdg>
+</app> 
+ est en la partie devant,
+ <app>
+ <lem wit="#S">donc
+<lb n="46"/>a la feme dolor en la naisance
+<lb n="47"/>&et-tironien-barré; chaude pisse. Se la feme a
+<lb n="48"/>dolor en la bouche de la marriz,
+<lb n="49"/>donc a la dolor al nonblil &et-tironien-barré; as
+<lb n="50"/>naches.
+ Se il est en la partie
+<lb n="51"/>deriere
+</lem> 
+ <rdg wit="#W"/>
+</app> 
+ , donc a ele dolor al dos
+<lb n="52"/>&et-tironien-barré; est costuvee &et-tironien-barré; a dolor desoz
+<lb n="53"/>les costes. Se li
+ <app>
+ <lem wit="#S">clols</lem>
+ <rdg wit="#W">clo</rdg>
+</app> 
+est de sanc
+<lb n="54"/>ou de roge cole, donc a la feme
+<lb n="55"/>fievre ague. &et-tironien-barré; se i
+ <app>
+ <lem wit="#W">est</lem>
+ <rdg wit="#S"/>
+</app> 
+ grant &et-tironien-barré; dolor,
+<lb n="56"/>tot primes estuet enquerre
+<lb n="57"/>dont li dols soit.
+</p>
+<p xml:id="TrotulaPr1-ALMA_VIII.66">
+<label>VIII.66</label>
+Se il est de
+<w>chau<lb n="58"/>de</w> nature, donc estuet la feme
+<lb n="59"/>seignier de la veine del pié. Ker
+<lb n="60"/>ce comande
+ <app>
+ <lem wit="#S"><persName>Galien</persName></lem>
+ <rdg wit="#W"><persName>Ypocras</persName></rdg>
+</app> 
+ <note corresp="#TrotLat">Galyenus</note>
+&et-tironien-barré; dist ke
+<lb n="61"/>la seignie de la main nuist à
+<lb n="62"/>feme ki a mal en la marriz,
+ <app>
+ <lem wit="#S"><lb n="63"/>ker cele segnie</lem>
+ <rdg wit="#W"/>
+</app> 
+traeit le sanc
+<lb n="64"/>amont &et-tironien-barré; ce tolt à feme ses
+<lb n="65"/>flors. Por ce estuet seignier
+<w>a<lb n="66"/>val</w> &et-tironien-barré; traire de sanc tant com
+<lb n="67"/>ele porra soffrir .Sin traie l’on
+<lb n="68"/>le sanc deus foiz le jours, &et-tironien-barré; se
+<lb n="69"/>ele est fieble, .j. foiz &et-tironien-barré; puis li
+<lb n="70"/>doint l’on à boivre choses qui
+<lb n="71"/>alques li tolge&tilde-nasale-n;t la chalor cum
+<lb n="72"/>est
+ <app>
+ <lem wit="#S">le jus de la</lem>
+ <rdg wit="#W"/>
+</app> 
+morele &et-tironien-barré;
+ <app>
+ <lem wit="#S">
+ <w>cassia
+ <pb n="251v" type="251" subtype="v"/><cb n="c"/>
+<lb n="1"/>fistre</w>
+</lem> 
+ <rdg wit="#W">cassiacula</rdg>
+</app> 
+&et-tironien-barré; manna &et-tironien-barré;
+ <app>
+ <lem wit="#S">
+ miel
+<w>ro<lb n="2"/>sat</w>
+</lem> 
+ <rdg wit="#W">miel rosac</rdg>
+</app> 
+&et-tironien-barré; jus de plantein et de
+<w>jo<lb n="3"/>barbe</w> &et-tironien-barré; altres froides choses.
+ <app>
+ <lem wit="#S">
+ <lb n="4"/>&et-tironien-barré; face l’on primes emplastres
+<lb n="5"/>qui tolgent la chalor et
+<w>con<lb n="6"/>fortent</w> la marriz com est la
+<lb n="7"/>morele &et-tironien-barré; pulegie &et-tironien-barré; jubarbe
+<lb n="8"/>&et-tironien-barré; sillum &et-tironien-barré; plantein et
+<w>scari<lb n="9"/>ole</w> &et-tironien-barré; oile rose. Alprés ices
+<lb n="10"/>mete l’on emplastres de tex
+<lb n="11"/>choses qui le dou facent
+<w>rheu<lb n="12"/>rer</w> cum est linuis <!--VM: li vins; ST li nuis (noix) ou linuis (graine de lin) VM j'ai vérifié dans TrotLat, c'est le dernier (semen lini)-->cuit od
+<w>bur<lb n="13"/>re</w> mauve fenugrec cuit od
+<lb n="14"/>oint dove ou de geline melhe
+<lb n="15"/>od aubun d’uef. De ce si face l’o&tilde-nasale-n;
+<lb n="16"/>pessaire ou de sengles ou de
+<lb n="17"/>compostes.
+</lem> 
+ <rdg wit="#W"/>
+</app> 
+</p> 
+<p xml:id="TrotulaPr1-ALMA_VIII.67">
+<label>VIII.67</label>
+<persName>Diascorides</persName>
+<note corresp="#TrotLat"><hi rendition="em">Galyenus</hi></note>
+ dist
+<lb n="18"/>ke moult valt a seeir en une
+<lb n="19"/>ewe ou espic soit cuit.
+</p>
+<p xml:id="TrotulaPr1-ALMA_VIII.68">
+<label>VIII.68</label>
+<persName><w>Pau<lb n="20"/>lus</w></persName> enseigne à feme à faire
+<lb n="21"/>une mecine chaude &et-tironien-barré; à la
+<w>du<lb n="22"/>rece</w> de la marriz &et-tironien-barré; à ice kel
+<lb n="23"/>est enversé &et-tironien-barré; al enfleison &et-tironien-barré; à
+<lb n="24"/>la ventosité geter. Prenge
+<lb n="25"/>l’on mooles de veel ou oint
+<lb n="26"/>de taisson cinc .l., &et-tironien-barré; de moole
+<lb n="27"/>de cerf sis , &et-tironien-barré; de saim d’ove
+<lb n="28"/>&et-tironien-barré; de geline et de coc, de chascu&tilde-nasale-n;
+<lb n="29"/>.iiij., &et-tironien-barré; de mastic &et-tironien-barré; de miel,
+<lb n="30"/>de chascun .ij., &et-tironien-barré; d’isope set
+<lb n="31"/>deniers pesant. Totes ices
+<lb n="32"/>choses doit l’on destemprer
+<lb n="33"/>od let de feme &et-tironien-barré; mesler e od
+<lb n="34"/>oile rosé &et-tironien-barré; metre enz od le
+<lb n="35"/>pessaire, si en face l’on emplastre.
+</p>
+<p xml:id="TrotulaPr1-ALMA_VIII.69">
+<label>VIII.69</label>
+<app>
+ <lem wit="#S">
+ <lb n="36"/>Se li clols est de froide nature,
+ <pb n="251v" type="251" subtype="v"/><cb n="d"/>
+<lb n="37"/>si est de grosses humors, donc
+<lb n="38"/>estuet faire cele mecine k'il
+<lb n="39"/>face departir. Pregne l’on
+<lb n="40"/>fenugrec &et-tironien-barré; mellilot &et-tironien-barré; linuis <!--ST liuuis (= li nuis / linuis, cf. supra); ne pas limuis! VM TrotLat : semen lini-->
+<lb n="41"/>&et-tironien-barré; mente si les cuise l’on en eve,
+<lb n="42"/>si en face l’on emplastre &et-tironien-barré; del
+<lb n="43"/>jus mete l’on enz od le
+<w>pessai<lb n="44"/>re</w>. Sovent li face l’on baing
+<lb n="45"/>&et-tironien-barré; enplastres legiers
+<w>mangi<lb n="46"/>ers</w> li doint l’on par quoi les
+<lb n="47"/>humors atenuisse&tilde-nasale-n;t. Se l'on
+<lb n="48"/>veut ke il tort à cuiture, donc
+<lb n="49"/>li face l’on emplastres teles
+<lb n="50"/>qu’il facent meurer &et-tironien-barré; crev&tilde-vertical-er;,
+<lb n="51"/>com est de</lem> 
+<rdg wit="#W"/><witDetail wit="#W">La partie de texte omise figure sous la forme de rubrique : <hi rendition="em">A dous on a bouces meurer, face tel emplastre</hi></witDetail>
+</app>
+ <app>
+ <lem wit="#S">fenugrec</lem>
+ <rdg wit="#W">Prenge l'on senecon</rdg>
+</app> 
+ &et-tironien-barré; de li
+<lb n="52"/>nuis cuit &et-tironien-barré; de farine d’orge
+<lb n="53"/>&et-tironien-barré;
+ <app>
+ <lem wit="#S">de la flor</lem>
+ <rdg wit="#W">et</rdg>
+</app> 
+de forment ou
+<w>fe<lb n="54"/>ves</w> cuites od f&i-suscrit-ri;ente de
+ <app>
+ <lem wit="#S">
+colons
+<lb n="55"/>ramiers
+</lem> 
+ <rdg wit="#W">colump ramage</rdg>
+</app> 
+ . Se li clos crieve
+<lb n="56"/>&et-tironien-barré; la cuiture vienge en la
+<w>ves<lb n="57"/>sie</w> donc li doint l’on à boiv&tilde-vertical-re;
+<lb n="58"/>let d’asnese &et-tironien-barré; let de chievre
+<lb n="59"/>&et-tironien-barré; semence de
+ <app>
+ <lem wit="#S">coconbres</lem>
+ <rdg wit="#W">cocordes</rdg><witDetail wit="#W">Lecture incertaine.</witDetail>
+</app> 
+et
+<lb n="60"/>de melons clistrere li face
+<lb n="61"/>l’on de miel tipsan.
+</p>
+</div>
+<div xml:id="TrotulaPr1-ALMA_IX"><!-- [IX. De ulceribus matricis] -->
+<head><label>[IX]</label>[De ulceribus matricis]</head>
+<!-- Collation IX -->
+<note>Le chapitre IX est omis par NW.</note>
+<p xml:id="TrotulaPr1-ALMA_IX.70">
+<label>IX.70</label>
+<note>Notes de lecture dans le ms. S, fol. 251d, marge droite (collation avec TrotFr ou TrotLat ?), en correspondance du début du § IX.70.</note>
+<lb n="62"/>En la marriz &et-tironien-barré; en la
+<w>nais<lb n="63"/>sance</w> avient à la fiee
+<lb n="64"/>plaies &et-tironien-barré; malans d’agues
+<w>me<lb n="65"/>cines</w> &et-tironien-barré; à la fiee d’avotier. Ce
+<lb n="66"/>conoist l’on par la cuiture q&i-suscrit-ui;
+<lb n="67"/>en ist &et-tironien-barré; cort et par la dolor et
+<lb n="68"/>par les pointes ke la marriz
+<lb n="69"/>a. Se les malans ou les
+<w>pla<lb n="70"/>ies</w> sunt de porreture de
+<w>vei<lb n="71"/>ne</w> &et-tironien-barré; se la cuiture ki en ist
+<lb n="72"/>torne alques a neiror od
+ <pb n="252r" type="252" subtype="r"/><cb n="a"/>
+<w>hori<lb n="1"/>ble</w> puor &et-tironien-barré; od arson de p&i-suscrit-ri;mes
+<lb n="2"/>si besoigne en la marriz &et-tironien-barré;
+<lb n="3"/>en la naisance tel chose ke
+<lb n="4"/>la naisance neit &et-tironien-barré; atempre
+<lb n="5"/>&et-tironien-barré; la dolor tolge com est le jus
+<lb n="6"/>de la morele &et-tironien-barré; de plantein et
+<lb n="7"/>oile rosé od laubim des oes
+<lb n="8"/>&et-tironien-barré; od lait de feme &et-tironien-barré; od le jus
+<lb n="9"/>de la portulace &et-tironien-barré; altres
+<w>ma&tilde-nasale-n;<lb n="10"/>giers</w> de froide nature. À la
+<lb n="11"/>feme doint l’on à mangier
+<lb n="12"/>cocombres &et-tironien-barré; portulaces et
+<lb n="13"/>altres mangiers nature
+<lb n="14"/>face l’on son baign en eve
+<lb n="15"/>ou soient cuite mirte
+<lb n="16"/>ou rose ou fenugrec &et-tironien-barré; flor de
+<lb n="17"/>pome grenate ou lentille
+<lb n="18"/>ou gaule ou flor d’eglentier
+<lb n="19"/>ou foille de cassie ou altres
+<lb n="20"/>choses de tel maniere. Se les
+<lb n="21"/>veines sunt porries, donc
+<lb n="22"/>li doint l’on sanc de dragon,
+<lb n="23"/>ou mirre ou encens ou rol
+<lb n="24"/>ou croc ou aristologie, d’ices
+<lb n="25"/>choses ou par soi ou
+<w>ensem<lb n="26"/>ble</w> meslees face l’on clistere
+<lb n="27"/>ou pessaire.
+</p>
+<p xml:id="TrotulaPr1-ALMA_IX.71">
+<label>[IX.71]</label>
+Altretant valt
+<lb n="28"/>litiun &et-tironien-barré; &et-tironien-barré; acacia selon en
+<lb n="29"/>fait pessaire.
+</p>
+</div>
+<div xml:id="TrotulaPr1-ALMA_X"><!-- [X. De prurito vulve] -->
+<head><label>[X]</label>[De prurito vulve]</head>
+<p xml:id="TrotulaPr1-ALMA_X.72">
+<!-- Collation X -->
+<note>Le chapitre X est omis par NW.</note>
+<label>[X.72]</label>
+Se la naisance
+<lb n="30"/>manjue à la feme, donc
+<w>pren<lb n="31"/>ge</w> l’on croc &et-tironien-barré; camfre &et-tironien-barré;
+<w>litar<lb n="32"/>gir</w> &et-tironien-barré; baies &et-tironien-barré; albun d’uef od
+<lb n="33"/>oile rosé, si en face l’on
+<w>clistra<lb n="34"/>ire</w> ou pessaire.
+</p>
+<p xml:id="TrotulaPr1-ALMA_X.73">
+<label>X.73</label>
+<persName>Diascorides</persName>
+<note corresp="#TrotLat"><hi rendition="em"><persName>Galyenus</persName> et <persName>Ypocras</persName></hi></note>
+<lb n="35"/>dit ke la poldre del fenugrec
+<lb n="36"/>od le sanc d’ome meslé valt à
+ <pb n="252r" type="252" subtype="r"/><cb n="b"/>
+<lb n="37"/>la durece de la marriz
+<lb n="38"/>selon en fait pessaire,
+<lb n="39"/>si com <persName>Ypocras</persName> dit.
+<note corresp="#TrotLat"><hi rendition="em">Galyenus dicit quod puluis fenugreci cum sagimine anseris ualet ad duriciem matricis, sicut testatur Ypocras</hi></note>
+</p>
+</div>
+<div xml:id="TrotulaPr1-ALMA_XI"><!-- [XI. De impedimento conceptionis] -->
+<p xml:id="TrotulaPr1-ALMA_XI.74">
+<!-- Collation XI -->
+<note>Chapitre lacunaire dans N (om. les §§ XI.75-78) et W (om. le § XI.77). Dans S le chapitre XI de TrotLat est entrecoupé du chapitre XIII [Experimentum ad impregnandum]. Nous avons donc une première partie du chapitre, qui comprend les §§ XI.74 et XI.75, ensuite, après le chapitre XIII (qui comporte un seul paragraphe), nous retrouvons la suite du chapitre XI, et notamment les §§ 76-78, mais dans un ordre différent par rapport à l'original latin : § XI.76, § XI.78 , interpolation commune avec N, § XI.77.</note>
+<label>[XI.74]</label>
+<note>Notes de lecture dans le ms. S, fol. 252b, marge droite (collation avec TrotFr ou TrotLat ?), en correspondance du début du § XI.74.</note>
+<app>
+<lem wit="#S"/>
+<rdg wit="#W"><hi rendition="red">Pourquoi fames ne pevent encherger</hi>. Si com <persName>Ypocras</persName> dit</rdg><witDetail wit="#W">La rubrique du § XI.74 est suivie de la phrase <hi rendition="em">Si com Ypocras dit</hi>, qui correspond à la toute fin du § X.73 dans S, ce qui correspond à une petite interpolation par rapport à l'original latin.</witDetail>
+</app>
+<w>Alqua&tilde-nasale-n;<lb n="40"/>tes</w> femes ne pueent
+<app>
+<lem wit="#S"><w>en<lb n="41"/>ceintier</w></lem>
+<rdg wit="#W">encherger</rdg>
+</app>
+ <app>
+ <lem wit="#S">
+ por ce ke trop sunt
+<lb n="42"/>graisles &et-tironien-barré; maigres &et-tironien-barré;
+<w>alqua&tilde-nasale-n;<lb n="43"/>tes</w>
+</lem> 
+ <rdg wit="#W"/><witDetail wit="#W">Saut du même au même</witDetail>
+</app> 
+por ce ke trop sunt
+<w>cras<lb n="44"/>ses</w> &et-tironien-barré; ont la bouche de la
+<w>mar<lb n="45"/>riz</w> estraite, ke la seme&tilde-nasale-n;ce ni
+<lb n="46"/>puet entrer. Alsquantes ont
+<lb n="47"/>la marriz si
+ <app>
+ <lem wit="#S">esluant</lem>
+ <rdg wit="#W">escrilouse</rdg><witDetail wit="#W">Correction interl. dans W par un lecteur qui suscrit un <hi rendition="em">s</hi> long au <hi rendition="em">s</hi> rond qui est employé par le scribe principal.</witDetail>
+</app> 
+k’eles ne
+<lb n="48"/>pueent retenir la semence.
+<lb n="49"/>À la fiee avient ice ke l’ome
+<lb n="50"/>a trop tenue semence, et por
+<lb n="51"/>ce ne la puet la marriz
+<w>rete<lb n="52"/>nir</w>. &et-tironien-barré; alquanz homes ont la
+<lb n="53"/>seme&tilde-nasale-n;ce &et-tironien-barré; les coiz de froide
+<w>na<lb n="54"/>ture</w> &et-tironien-barré;
+ <app>
+ <lem wit="#S">deseché</lem>
+ <rdg wit="#W">seche</rdg>
+</app> 
+ , si ke cil n’
+<w>en<lb n="55"/>genderront</w> ja
+ <app>
+ <lem wit="#S"/>
+ <rdg wit="#W">nulle foiz</rdg>
+</app> 
+ .
+</p>
+<p xml:id="TrotulaPr1-ALMA_XI.75">
+<label>[XI.75]</label>
+Ki velt
+<w>espro<lb n="56"/>ver</w> ke la feme est
+<w>barhaig<lb n="57"/>ne</w>, ou por l’enfermeté de l’home
+<lb n="58"/>ou de la feme, prenge deus
+ <app>
+ <lem wit="#S"><lb n="59"/>pocons</lem>
+ <rdg wit="#W">petiz por</rdg>
+</app> 
+ , si mete bren en chascu&tilde-nasale-n;,
+<lb n="60"/>si mete de la date al masle
+<lb n="61"/>en l’un od le bren &et-tironien-barré; de la date
+<lb n="62"/>à la fame en l’autre, si les laist
+<lb n="63"/>l’on ester une semaine ou
+ <app>
+ <lem wit="#S"><lb n="64"/>quinze jourz</lem>
+ <rdg wit="#W">.xx. jors</rdg>
+</app> 
+ <note corresp="#TrotLat"><hi rendition="em">per .ix. uel dies .x.</hi></note>
+.
+&et-tironien-barré; se la
+<w>barhanne<lb n="65"/>té</w> vient de la feme, donc
+<w>tro<lb n="66"/>vera</w> l’on en la date &et-tironien-barré; el bren
+<lb n="67"/>vermez &et-tironien-barré; si la trouvera l’on
+<w>pu<lb n="68"/>iant</w>. &et-tironien-barré; altresi del masle, se
+<lb n="69"/>por lui est ke la feme ne
+<w>por<lb n="70"/>ra</w> concevoir. &et-tironien-barré; se nul d’els n’a
+<lb n="71"/>signe de barhaigneté, donc lor
+<lb n="72"/>porra l’on aidier par mecines
+ <pb n="252v" type="252" subtype="v"/><cb n="c"/>
+<lb n="1"/>ke il avront enfanz.
+</p>
+</div> 
+<div xml:id="TrotulaPr1-ALMA_XIII"><!-- [XIII. Experimentum ad impregnandum] -->
+<head><label>[XIII]</label>[Experimentum ad impregnandum]</head>
+<p xml:id="TrotulaPr1-ALMA_XIII.82">
+<label>[XIII.82]</label>
+// <w>Fe<lb n="2"/>me</w> ki velt encentier
+<app>
+<lem wit="#S #W">prenge</lem>
+<rdg wit="#N">secche</rdg>
+ </app> 
+<lb n="3"/>les coiz de ver ou de porcel, si
+<app>
+<lem wit="#S #N"/>
+<rdg wit="#W">les i metez en un pot neuf sus le feu et les ardez et</rdg>
+ </app> ,
+<lb n="4"/>en face poldre
+<app>
+<lem wit="#S #N"/>
+<rdg wit="#W">ou vin</rdg>
+ </app> 
+si en boive
+<app>
+<lem>od <lb n="5"/>vin</lem>
+<rdg wit="#W"/>
+ </app> 
+&et-tironien-barré; à la fin de ses flors si
+<lb n="6"/>gise
+<app>
+<lem wit="#S #N">od son seignor.</lem>
+<rdg wit="#W">o home</rdg>
+ </app> 
+ </p> 
+</div> 
+ <div xml:id="TrotulaPr1-ALMA_XI_bis"><!-- [XI. De impedimento conceptionis] -->
+<p xml:id="TrotulaPr1-ALMA_XI.76">
+<label>[XI.76]</label>
+Por
+<app>
+<lem wit="#S"><w>conce<lb n="7"/>voir</w></lem>
+<rdg wit="#W">le</rdg>
+</app>
+masle,
+ <app>
+ <lem wit="#S">face l’on sechier</lem>
+ <rdg wit="#W">prenez</rdg>
+</app> 
+<lb n="8"/>la marriz &et-tironien-barré; la naisance del
+<w>lie<lb n="9"/>vre</w> &et-tironien-barré; puis en face l’on poldre,
+<lb n="10"/>si doint l’on à boivre al masle
+<lb n="11"/>&et-tironien-barré; à la feme.
+ <app>
+ <lem wit="#S">.j. coillon de lievre
+<lb n="12"/>s'il tranglote, &et-tironien-barré; à la fin de ses
+<lb n="13"/>flors si ait à faire od masle.</lem>
+ <rdg wit="#W"/><witDetail wit="#W">La fin du § est ici omise, mais on retrouve une version abrégée accolée au § XI. 78.</witDetail>
+</app> 
+</p>
+ <p xml:id="TrotulaPr1-ALMA_XI.78">
+ <label>[XI.78]</label>
+ <lb n="14"/>Prenge la feme leine od la
+ <w>su<lb n="15"/>or</w>, si la moille en lait d’asnese
+ <lb n="16"/>si la lit sor l’onbliel &et-tironien-barré; soit
+ <lb n="17"/>tant dementres com l’om
+ <w>ier<lb n="18"/>ra</w> od li.
+</p> 
+<p xml:id="interpolation_SN_1">
+ <label>[Interpolation commune à SN n°1(cf. respectivement fol.252v et 182v)]</label>
+<app>
+<rdgGrp>
+ <lem wit="#S #N">
+ <app>
+ <lem wit="#S">Face poldre de vif de
+<lb n="19"/>chesne si la boive od vin al
+<w>co<lb n="20"/>mencement</w> &et-tironien-barré; à la fin de ses flors.</lem>
+<rdg wit="#N">Autre. Face prendre le jus de chaine, si beive od le vin al comencement et a la fin de ses flurs.</rdg>
+</app> 
+</lem> 
+</rdgGrp>
+<rdg wit="#W"/>
+</app> 
+</p> 
+<p xml:id="TrotulaPr1-ALMA_XI.77">
+<label>[XI.77]</label>
+ <app>
+ <lem wit="#S #W"/>
+ <rdg wit="#N">A la feme et a l'home</rdg>
+</app> 
+<lb n="21"/>Prenge l’on le feie &et-tironien-barré; les coiz
+<lb n="22"/>del premier porcel ke truie,
+<lb n="23"/>à sol sis seche l’on, si en face l’on
+<lb n="24"/>poldre si en doint l’on à home
+<lb n="25"/>ki ne puet engendrer ou
+<lb n="26"/>à la feme barhaigne.
+</p>
+</div>
+ <div xml:id="TrotulaPr1-ALMA_XIV"><!-- [XIV. De mulieribus que non debent viris uti] -->
+ <head><label>[XIV]</label>[De mulieribus que non debent viris uti]</head>
+ <!-- Collation chapitre XIV -->
+ <note>Le chapitre XIV est omis par W et interpolé dans SN.</note>
+ <p xml:id="TrotulaPr1-ALMA_XIV.83">
+ <label>[XIV.83]</label>
+ <persName>Coste&tilde-nasale-n;<lb n="27"/>tin</persName>
+ <note corresp="#TrotLat"><hi rendition="em">Galyenus</hi>.</note>
+ dit en son livre ke
+ <w>mes<lb n="28"/>chines</w> ki ont petites
+ <w>naisa&tilde-nasale-n;<lb n="29"/>ces</w> &et-tironien-barré; estreites marriz ne
+ <w>doi<lb n="30"/>vent</w> avoir à home à faire,
+ <lb n="31"/>pour crieme k’eles ne
+ <w>concei<lb n="32"/>vent</w> <choice><corr resp="#ed"/><sic>&et-tironien-barré; por ce k’eles ne
+ <w>concei<lb n="33"/>vent</w></sic></choice> &et-tironien-barré; por ce k’eles ne
+ <w>mue<lb n="34"/>rent</w>
+ .
+</p> 
+ <p xml:id="interpolation_SN_2">
+ <label>[Interpolation commune à SN n°2 (cf. respectivement fol.252v et 182v), se situant après le § XIV.83 dans S.]</label>
+ <app>
+ <rdgGrp>
+ <lem wit="#S #N">
+ Mais por ce ke
+ <app>
+ <lem wit="#S"><w>alqua&tilde-nasale-n;<lb n="35"/>tes</w></lem> 
+ <rdg wit="#N">alcunes fames</rdg>
+</app> 
+ sunt de tel nature k'eles
+ <lb n="36"/>ne porrent estre
+ <app>
+ <lem wit="#S">femes</lem>
+ <rdg wit="#N"/>
+</app> 
+ sanz
+ <pb n="252v" type="252" subtype="v"/><cb n="d"/>
+ <lb n="37"/>hant d’ome, si ont esgardé li
+ <w>sai<lb n="38"/>ve</w>
+ <app>
+ <lem wit="#S">home</lem>
+ <rdg wit="#N">mires</rdg>
+</app> 
+ home k’eles aient le
+ <app>
+ <lem wit="#S">conu&tilde-nasale-n;s
+</lem> 
+ <rdg wit="#N">conuers</rdg>
+</app> 
+ <lb n="39"/>d’ome &et-tironien-barré; k’eles
+ <app>
+ <lem wit="#S">par cestes cures
+ <lb n="40"/>ne puissent conceivre</lem>
+ <rdg wit="#N">par mecines ne conceivent</rdg>
+</app> 
+ .</lem>
+</rdgGrp> 
+ <rdg wit="#W"/>
+</app> 
+</p> 
+</div> 
+ <div xml:id="TrotulaPr1-ALMA_XVI"><!-- [XVI. De conservatione fetus] -->
+ <head><label>[XVI]</label>[De conservatione fetus]</head>
+ <!-- Collation chapitre XVI -->
+ <note>Le chapitre XVI est omis par W et lacunaire dans SN, qui omettent le § XVI.89.</note>
+ <p xml:id="TrotulaPr1-ALMA_XVI.88">
+ <label>[XVI.88]</label>
+ <note>Notes de lecture dans le ms. S, fol. 252d, marge droite (collation avec TrotFr ou TrotLat ?), en correspondance du début du § XVI.88.</note>
+ <lb n="41"/>Selonc ice ke <persName>Galien</persName> dit
+ <lb n="42"/>en ses livres, altre si fest
+ <lb n="43"/>li enfes el ventre à la feme
+ <lb n="44"/>com li fruiz en l’arbre, ker li
+ <lb n="45"/>fruiz est primes tendres &et-tironien-barré;
+ <w>fei<lb n="46"/>bles</w> &et-tironien-barré; legierement chiet ou
+ <lb n="47"/>pour vent ou por aocheme&tilde-nasale-n;t
+ <app>
+ <lem wit="#S"/>
+ <rdg wit="#N">u par gelee</rdg>
+</app> 
+ .
+ <lb n="48"/>Mais quant il i a alques esté
+ <lb n="49"/>&et-tironien-barré; alques est creuz d’une
+ <w>afer<lb n="50"/>me</w> &et-tironien-barré; plus tant en chiet et qua&tilde-nasale-n;t
+ <lb n="51"/>il est bien meure donc chiet
+ <lb n="52"/>sanz vent
+ <app>
+ <lem wit="#S">&et-tironien-barré; sanz ce ke l’on nel
+ <lb n="53"/>toche</lem>
+ <rdg wit="#N">e sanz atochement</rdg>
+</app> 
+ . Altresi est de l’enfant
+ <lb n="54"/>quant la marriz a receu la
+ <w>se<lb n="55"/>me&tilde-nasale-n;ce</w> donc est ses aliemenz
+ <w>fie<lb n="56"/>bles</w> si ke il en chiet
+ <w>legiere<lb n="57"/>ment</w> ou par
+ <app>
+ <lem wit="#S">saillir</lem>
+ <rdg wit="#N">caillir</rdg>
+</app> 
+ ou par
+ <lb n="58"/>escrilher ou par chaier ou par
+ <lb n="59"/>menoison ou par seignie ou
+ <lb n="60"/>par grant travail ou par ire
+ <lb n="61"/>ou par duel. Par totes ices
+ <lb n="62"/>choses pert feme legierem&tilde-nasale-en;t
+ <lb n="63"/>son enfant
+ <app>
+ <lem wit="#S">quant il est
+ <w>enge&tilde-nasale-n;<lb n="64"/>dré</w> novelement</lem>
+ <rdg wit="#N">aprés ceo que la femme ad conceue</rdg>
+</app> 
+ . Mais qua&tilde-nasale-n;t
+ <lb n="65"/>ele l’a auques porté &et-tironien-barré; li
+ <w>en<lb n="66"/>fes</w> est vis ele nel pert mie
+ <lb n="67"/>si legierement. ¶ <persName>Ypocras</persName>
+ <lb n="68"/>dist que se feme enceinte a
+ <lb n="69"/>besoigne d’espurgier soi ou de
+ <lb n="70"/>seignier, qu’en n’e&tilde-nasale-n; li doit faire
+ <lb n="71"/>.iiij. mois ne aprés le
+ <app>
+ <lem wit="#S">setme</lem>
+ <rdg wit="#N">sime</rdg>
+</app> 
+ <lb n="72"/>mois. Mais entre ces si li face l’o&tilde-nasale-n;
+ <pb n="253r" type="253" subtype="r"/><cb n="a"/>
+ <lb n="1"/>mesurablement selon ce k’ele
+ <lb n="2"/>porra souffrir &et-tironien-barré; totes feies od
+ <lb n="3"/>poor.
+</p> 
+</div> 
+ <div xml:id="TrotulaPr1-ALMA_XII"><!-- [XII. De regimine pregnantium] -->
+<head><label>[XII]</label>[De regimine pregnantium]</head>
+<!-- Collation XII -->
+ <note>Le chapitre XII est omis par W et lacunaire dans N, qui conserve le seul § XII.79, fort abrégé.</note>
+<p xml:id="TrotulaPr1-ALMA_XII.79">
+ <label>[XII.79]</label>
+Quant feme est
+<w>pre<lb n="4"/>mierement</w> enceinte, se ne
+<lb n="5"/>li doit l’on amembrer
+<w>man<lb n="6"/>gier</w> k’ele ne puisse avoir ne
+ <lb n="7"/>trover, ker meintes en
+<w>per<lb n="8"/>de&tilde-nasale-n;t</w> lor efanz por ce k’eles
+ <lb n="9"/>ne pueent avoir
+ <app>
+ <lem wit="#S">ce k’eles
+ <w>de<lb n="10"/>sirrent</w></lem>
+ <rdg wit="#N">lur desir</rdg>
+</app> 
+ .
+ <app>
+ <lem wit="#S">
+S’ele desir à
+<w>mangi<lb n="11"/>er</w> creie ou argille, si li doint
+ <lb n="12"/>l’on à mangier cucre od
+ <w>fe<lb n="13"/>ves</w> tostees. S’ele desirre rien
+ <lb n="14"/>k’ele on puisse avoir, si li doin
+ <lb n="15"/>selon. Quant ele ap&i-suscrit-ri;sme à
+ <lb n="16"/>son tens d’enfanter, donc se
+ <lb n="17"/>doit ele sovent baignier, si li
+ <lb n="18"/>est bon oindre son ventre de
+ <lb n="19"/>oile d’olive, si li doint l’on à
+ <lb n="20"/>mangier legieres viandes
+ <lb n="21"/>et solubles
+ </lem> 
+ <rdg wit="#N"/>
+</app> 
+ .
+</p> 
+ <p xml:id="TrotulaPr1-ALMA_XII.80">
+ <label>[XII.80]</label>
+ Se li pié enfelent,
+ <lb n="22"/>si oigne d’eve rosé ou de aisil.
+ <lb n="23"/>Aprés son altre mangier li
+ <lb n="24"/>doint l’on cooinz &et-tironien-barré; parmainz
+ <lb n="25"/>&et-tironien-barré; pomes grenates.
+</p> 
+ <p xml:id="TrotulaPr1-ALMA_XII.81">
+ <label>[XII.81]</label>
+ S’ele enfle
+ <lb n="26"/>&et-tironien-barré; vent coilt trop dedenz, li si
+ <lb n="27"/>prenge la seme&tilde-nasale-n;ce d’ache et
+ <lb n="28"/>de fanoil, ameos, genginre, de
+ <lb n="29"/>chascune .iiij. l., &et-tironien-barré; de mastic
+ <lb n="30"/>&et-tironien-barré; de girofle &et-tironien-barré; de cardamome
+ <lb n="31"/>&et-tironien-barré; de garance la racine, de
+ <w>chas<lb n="32"/>cun</w> .iij. deniers pesant, &et-tironien-barré; de
+ <lb n="33"/>canele de noiz muscate, de
+ <w>ca<lb n="34"/>stoire</w>, de zedoar de racine de
+ <lb n="35"/>glaiol, de chascun d’eus deners
+ <lb n="36"/>pesant, de cucre .v. onces, et
+ <pb n="253r" type="253" subtype="r"/><cb n="b"/>
+ <lb n="37"/>face l’on delgiee poldree, s’il
+ <lb n="38"/>mete l’on ovec miel cuit ta&tilde-nasale-n;t
+ <lb n="39"/>que asez en sait s'il en doint
+ <lb n="40"/>l’on .j. l. de <!-- VM question pour Monsieur Möhren - unités de mesure -->en vin. Iceste
+ <w>me<lb n="41"/>cine</w> tolt l’avortier &et-tironien-barré; la
+ <w>ven<lb n="42"/>tosité</w>, quant feme est venue
+ <lb n="43"/>à tens d’avoir enfant.
+</p> 
+</div> 
+<div xml:id="TrotulaPr1-ALMA_XV"><!-- [XV. De nolentibus concipere] -->
+ <head><label>[XV]</label>[De nolentibus concipere]</head>
+ <!-- Collation chapitre XV -->
+ <note>Le chapitre XIV est omis par SW et lacunaire dans N, qui conserve seulement le § XV.86.</note>
+ <p xml:id="TrotulaPr1-ALMA_XV.86">
+ <label>[XV.86]</label>
+ <app>
+ <lem wit="#N">
+// Que femme ne conceive, prenge l'em la mustele que madle seit, si li toille l'em les coilluns, si leist l'em la mustele aler vif. Ices coilluns art la femme sur sei, liez en un quier en son sain, si ne conceivera mie.
+</lem> 
+ <rdg wit="#S #W"/>
+</app> 
+</p> 
+</div> 
+<div xml:id="interpolation_N_1">
+ <head>[Interpolation isolée N n° 1 (fol. 182v)]</head>
+ <p>
+ <app>
+ <lem wit="#N">
+Qui vout esprouver si femme est baraigne u pur la vice de l’home u de la femme prenge deus posons de terre, si mette bren en l’un e en l’autre e la date al madle en le un e la date de la femme en l’autre, si lese ester issi une simaine u quinze jours e si la baraigneté vient de la femme, donc avera el bran e en la date verms, e si serra ele pulente en autretiele maniere del madle est <!--VM question pour M. Möhren : la pronance / provance-->e si nul de eus n'ait <!-- VM question pour ST : revoir la lecture ( ?)-->le signe de baraigneté, donc pot l’em aideir par mescinez que il aient enfanz.
+</lem> 
+ <rdg wit="#S #W"/>
+</app> 
+</p> 
+</div> 
+ <div xml:id="interpolation_N_2">
+ <head>[Interpolation isolée N n° 2 (fol. 182v)]</head>
+ <p>
+ <app>
+ <lem wit="#N">
+// A faire femme conceivre mes qu’ele seit baraigne fors que ele ait ses flurs la pressure de <!--VM question pour M. Möhren levre-->boive li home od vin e tant tost aprés gise od la femme. E la femme se garde de asil e de touz egres choses e des viandes salés ne ele ne se leve 7 jours. // Autre le jus de rue verte mette en laine e pois quant son baron ad giu ad lui cel jus od la laine mette dedenz la nesance. 
+</lem>
+<rdg wit="#S #W"/>
+</app>
+</p> 
+</div> 
+ <div xml:id="interpolation_N_3">
+ <head>[Interpolation isolée N n° 3 (fol. 183r)]</head>
+<p>
+<app>
+ <lem wit="#N">
+ // Quant femme est venu al naturel tens de aver enfant donc se molt li enfes plus forment qu’il ne sout por ceo lui estoet que la nessance enlargit et que la marriz od ses vertuz gette l’enfant fors del lit que l’em apele rerefas. //
+ A savoir si la femme ad conceue boivet hermoise quit en vin u en cervoise s’il use chaud e si ele ne ad conceue si lui vendrunt aucunes choses de ses flurs // Si vos volez esprover si la femme poisse conceivre u non, prenez maluez si metez en le urine de la femme e lessez ester issi treis jors e pois aprés le tiers jor si les traiez, e si les malues seient teles cum il furent la enz mises, si pot conceivre, e si non, si ne pot mie conveivre. // Uncore si vous volez esprover si la defaute seit en le home u en la femme, prenez deus possuns de terre, si metez dedenz fience de cheval fresche, pois si prenez orge si metez sur la fence en le urin de l’hom en l’un vessel e le urine de la femme en l’autre e pois si lessez ester 3 joirs u 4 e si le orge germet dunc ne peche il nient en lui e si nun donq peche il en lui. // Que femme conceive manjue la pressure de lievre od bure <!--mout-->valt hermoise maismes ceo fart. // Semence de panage bu od vin u od cervoise maismes ceo fart.
+</lem> 
+ <rdg wit="#S #W"/>
+</app> 
+ </p> 
+</div> 
+</body>
+</text>
+</TEI>

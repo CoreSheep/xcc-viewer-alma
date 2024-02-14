@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "alma_editions_odd_tokenised_merged.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+        <titleStmt>
+        <title type="main">GuiChaul<hi rendition="sc">m</hi>T</title>
+        <title type="sub"><title>something...</title><persName></persName>
+        <origDate><hi rendition="sup"></hi></origDate></title>
+        <author></author>
+        <editor>
+        <persName xml:id="VM"><forename>Viola </forename><surname>Mariotti</surname></persName>
+        <roleName>Docteure en philologie romane</roleName> et <roleName> chercheuse post-doctorale pour le projet ALMA (Heidelberger Akademie der Wissenschaften ; Romanisches Seminar - Universität Heidelberg).</roleName>
+        </editor>
+        <principal>
+        <persName xml:id="ST"><forename>Sabine</forename> <surname>Tittel</surname>, <roleName>chercheuse en philologie romane (Heidelberger Akademie der Wissenschaften ; Université de Heidelberg - Romanisches Seminar)</roleName> et <roleName>directrice du projet ALMA - Equipe scientifique de Heidelberg (ancien français).</roleName></persName></principal>
+        <respStmt>
+        <resp>
+        Membre du projet ALMA - Equipe scientifique de Heidelberg (ancien français)
+        </resp>
+        <persName xml:id="RM"><forename>Ragini</forename> <surname>Menon</surname>, <roleName>doctorante en humanités numérique dans le cadre du projet ALMA (dir. <ref corresp="#ST">S. Tittel</ref>).</roleName></persName>
+        </respStmt>
+        <respStmt>
+        <resp>
+        Directrice du projet ALMA - Equipe scientifique de Regensburg (ancien occitan)
+        </resp>
+        <persName xml:id="MS"><forename>Maria</forename> <surname>Selig</surname>, <roleName>professeure de philologie romane à l'Université de Regensburg</roleName>.</persName>
+        </respStmt>
+        <respStmt>
+        <resp>
+        Directeur du projet ALMA - Equipe scientifique de Saarbrücken (ancien italien)
+        </resp>
+        <name><persName xml:id="EP"><forename>Elton</forename> <surname>Prifti</surname>, <roleName>professeur de philologie romane à l'Université de Saarbrücken</roleName>.</persName>
+        </name>
+        </respStmt>
+        <respStmt>
+        <resp>
+        Directeur du projet ALMA - Equipe scientifique de Saarbrücken (ancien italien)
+        </resp>
+        <name><persName xml:id="WS"><forename>Wolfgang</forename> <surname>Schweickard</surname>, <roleName>professeur emérite de philologie romane à l'Université de Saarbrücken</roleName>.</persName>
+        </name>
+        </respStmt>
+        </titleStmt>
+        <publicationStmt>
+        <p/>
+        </publicationStmt>
+        <sourceDesc>
+        <listWit>
+        <witness xml:id="X"><!-- ajouter ici la cote ms. + le sigle (X, Y et Z ce sont des sigles faux) --></witness>
+        <witness xml:id="Y"></witness>
+        <witness xml:id="Z"></witness>
+        </listWit>
+        <msDesc sameAs="#X"> <!-- Ajouter autant de msDesc que de mss., en copiant collant l'élément <msDesc> et en respectant strictement l'imbrication ci-dessous -->
+        <msIdentifier>
+        <settlement>London, <!-- ou autre ville bien sûr !--></settlement>
+        <institution xml:id="london_british_library">
+        <orgName></orgName>
+        </institution>
+        <repository></repository>
+        <idno></idno>
+        <altIdentifier>
+        <idno type="ark"></idno>
+        </altIdentifier>
+        <altIdentifier>
+            <idno type="facs"></idno>
+        </altIdentifier>
+        </msIdentifier>
+        <head>
+        <origDate></origDate>
+        </head>
+        <physDesc>
+        <objectDesc form="codex">
+        <supportDesc material="parchment">
+        <support></support>
+        <extent><num></num></extent>
+        <foliation></foliation>
+            <collation></collation> 
+        </supportDesc>
+        <layoutDesc>
+        <layout columns="2">
+        
+        <dimensions type="layout">
+                        <height unit="mm"></height>
+                        <width unit="mm"></width>
+                    </dimensions>
+                </layout>
+            </layoutDesc>
+        </objectDesc>
+        <handDesc hands="1" cert="high">
+        <handNote>
+        <p></p>
+        </handNote>
+        </handDesc>
+        <scriptDesc>
+                <p></p>
+        </scriptDesc>
+        <decoDesc> 
+        <p></p>
+        </decoDesc>
+        <bindingDesc>
+        <binding>
+        <p></p>
+        </binding>
+        </bindingDesc>
+        </physDesc>
+        <history>
+        <origin>
+        <origPlace></origPlace>
+        <origDate></origDate>
+        </origin>
+        <provenance></provenance>
+        </history>
+        </msDesc>
+         </sourceDesc>
+            </fileDesc>
+            <profileDesc>
+                <creation resp="#VM" when="2023-02-02">
+                    <date><!-- Ajouter ici pour l'homme la valeur avec la date crée pour la machine juste ci-dessus : on la recopie telle quelle--></date>
+                </creation>
+              <textDesc>
+                    <channel mode="w"/>
+                    <constitution type="single"/> 
+                    <derivation type="translation">Traduction</derivation>
+                    <domain type="medecine">Médecine</domain>
+                    <factuality type="fact">Texte technique</factuality>
+                    <interaction type="none"/>
+                    <preparedness type="prepared"/>
+                    <purpose type="inform" />
+                </textDesc>
+                <settingDesc>
+                    <setting>
+                        <name></name>
+                        <time when="1217"></time><!-- VM2ST : pour when= on suit le concept "numdat" (fichier numdat.docx) pour transférer la datatation en chiffres -->
+                    </setting>
+                </settingDesc>
+        </profileDesc>
+        <encodingDesc>
+        <p></p>
+        </encodingDesc>
+        <revisionDesc>
+        <change when="2023-02-02" resp="#VM"></change>
+        </revisionDesc>
+        </teiHeader>
+    <text xml:id="GuiChaulm-ALMA_edition" xml:lang="frm" type="fr">
+
+            <body>
+                <div xml:id="Prologue_GuiChaul">
+                    <head>[Prologue]</head>
+                    <div xml:id="blub">
+                        <label>[1]</label>
+                        <p>
+                            <pb n="1r" type="1" subtype="r"/><cb n="a"/>
+                            <lb n="1"/>
+                            <w xml:id="GuiChaulm-ALMA_edition_1_r_a_1_001" form="ou" lemma="a" POS="PRE" morph="MORPH=empty" mainlemma="" sense="testdefinition1">Ou</w>
+                            <w xml:id="GuiChaulm-ALMA_edition_1_r_a_1_0000002" form="nom" lemma="nom" POS="NOMcom" morph="NOMB.=s|GENRE=m|CAS=r" mainlemma="" sense="mot servant à désigner les êtres, les choses qui appartiennent à une même catégorie logique">nom</w>
+                            <w xml:id="GuiChaulm-ALMA_edition_1_r_a_1_0000003" form="nostre" lemma="nostre" POS="DETpos" morph="PERS.=1|NOMB.=s|GENRE=m|CAS=r" mainlemma="" sense="testdefinition2">nostre</w>
+                            <w xml:id="GuiChaulm-ALMA_edition_1_r_a_1_0000004" form="femme" lemma="feme" POS="NOMcom" morph="NOMB.=s|GENRE=f|CAS=r" mainlemma="" sense="Frau">femme</w>
+                            <w xml:id="GuiChaulm-ALMA_edition_1_r_a_1_0000005" form="," lemma="," POS="PONfbl" morph="MORPH=empty" mainlemma="" sense="">,</w>
+                            <lb n="2"/>
+                            <w xml:id="GuiChaulm-ALMA_edition_1_r_a_2_0000001" form="veit" lemma="veoir" POS="VERcjg" morph="MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s" mainlemma="" sense="">veit</w>
+                            <w xml:id="GuiChaulm-ALMA_edition_1_r_a_2_0000002" form="le" lemma="le" POS="DETdef" morph="NOMB.=s|GENRE=m|CAS=r" mainlemma="" sense="">le</w>
+                            <w xml:id="GuiChaulm-ALMA_edition_1_r_a_2_0000003" form="jeüné" lemma="jeüner" POS="VERppe" morph="NOMB.=s|GENRE=m|CAS=r" mainlemma="" sense="">jeüné</w>
+                            <w xml:id="GuiChaulm-ALMA_edition_1_r_a_2_0000004" form="," lemma="," POS="PONfbl" morph="MORPH=empty" mainlemma="" sense="">,</w>
+                            <w xml:id="GuiChaulm-ALMA_edition_1_r_a_2_0000005" form="suzz" lemma="suz" POS="PRE" morph="MORPH=empty" mainlemma="" sense="">suzz</w>
+                            <lb n="3"/>
+                            <w xml:id="GuiChaulm-ALMA_edition_1_r_a_3_0000001" form="fiell" lemma="fiel" POS="NOMcom" morph="NOMB.=s|GENRE=m|CAS=r" mainlemma="" sense="Galle">fiell</w>
+                            <w xml:id="GuiChaulm-ALMA_edition_1_r_a_3_0000002" form="famme" lemma="feme" POS="NOMcom" morph="NOMB.=s|GENRE=f|CAS=r" mainlemma="" sense="Frau">famme</w>
+                            <w xml:id="GuiChaulm-ALMA_edition_1_r_a_3_0000003" form="fame" lemma="feme" POS="NOMcom" morph="NOMB.=s|GENRE=f|CAS=r" mainlemma="" sense="Frau">fame</w>
+                            <w xml:id="GuiChaulm-ALMA_edition_1_r_a_3_0000004" form="fiel" lemma="fiel" POS="NOMcom" morph="NOMB.=s|GENRE=m|CAS=r" mainlemma="" sense="Gallenblase">fiel</w>
+                            <w xml:id="GuiChaulm-ALMA_edition_1_r_a_3_0000005" form="fyell" lemma="fiel" POS="NOMcom" morph="NOMB.=s|GENRE=m|CAS=r" mainlemma="" sense="">fyell</w>
+                        </p>
+                    </div>
+                </div>
+            </body>
+    </text>
+</TEI>

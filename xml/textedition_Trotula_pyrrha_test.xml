@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "alma_editions_odd_tokenised_merged.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+        <titleStmt>
+        <title type="main">TrotulaPr<hi rendition="sup">1</hi>-ALMA</title>
+        <title type="sub"><title><foreign xml:lang="lat"></foreign></title><persName></persName>
+        <origDate><hi rendition="sup"></hi></origDate></title>
+        <author></author>
+        <editor>
+        <persName xml:id="VM"><forename>Viola </forename><surname>Mariotti</surname></persName>
+        <roleName>Docteure en philologie romane</roleName> et <roleName> chercheuse post-doctorale pour le projet ALMA (Heidelberger Akademie der Wissenschaften ; Romanisches Seminar - Universität Heidelberg).</roleName>
+        </editor>
+        <principal>
+        <persName xml:id="ST"><forename>Sabine</forename> <surname>Tittel</surname>, <roleName>chercheuse en philologie romane (Heidelberger Akademie der Wissenschaften ; Université de Heidelberg - Romanisches Seminar)</roleName> et <roleName>directrice du projet ALMA - Equipe scientifique de Heidelberg (ancien français).</roleName></persName></principal>
+        <respStmt>
+        <resp>
+        Membre du projet ALMA - Equipe scientifique de Heidelberg (ancien français)
+        </resp>
+        <persName xml:id="RM"><forename>Ragini</forename> <surname>Menon</surname>, <roleName>doctorante en humanités numérique dans le cadre du projet ALMA (dir. <ref corresp="#ST">S. Tittel</ref>).</roleName></persName>
+        </respStmt>
+        <respStmt>
+        <resp>
+        Directrice du projet ALMA - Equipe scientifique de Regensburg (ancien occitan)
+        </resp>
+        <persName xml:id="MS"><forename>Maria</forename> <surname>Selig</surname>, <roleName>professeure de philologie romane à l'Université de Regensburg</roleName>.</persName>
+        </respStmt>
+        <respStmt>
+        <resp>
+        Directeur du projet ALMA - Equipe scientifique de Saarbrücken (ancien italien)
+        </resp>
+        <name><persName xml:id="EP"><forename>Elton</forename> <surname>Prifti</surname>, <roleName>professeur de philologie romane à l'Université de Saarbrücken</roleName>.</persName>
+        </name>
+        </respStmt>
+        <respStmt>
+        <resp>
+        Directeur du projet ALMA - Equipe scientifique de Saarbrücken (ancien italien)
+        </resp>
+        <name><persName xml:id="WS"><forename>Wolfgang</forename> <surname>Schweickard</surname>, <roleName>professeur emérite de philologie romane à l'Université de Saarbrücken</roleName>.</persName>
+        </name>
+        </respStmt>
+        </titleStmt>
+        <publicationStmt>
+        <p/>
+        </publicationStmt>
+        <sourceDesc>
+        <listWit>
+        <witness xml:id="X"><!-- ajouter ici la cote ms. + le sigle (X, Y et Z ce sont des sigles faux) --></witness>
+        <witness xml:id="Y"></witness>
+        <witness xml:id="Z"></witness>
+        </listWit>
+        <msDesc sameAs="#X"> <!-- Ajouter autant de msDesc que de mss., en copiant collant l'élément <msDesc> et en respectant strictement l'imbrication ci-dessous -->
+        <msIdentifier>
+        <settlement>London, <!-- ou autre ville bien sûr !--></settlement>
+        <institution xml:id="london_british_library">
+        <orgName></orgName>
+        </institution>
+        <repository></repository>
+        <idno></idno>
+        <altIdentifier>
+        <idno type="ark"></idno>
+        </altIdentifier>
+        <altIdentifier>
+            <idno type="facs"></idno>
+        </altIdentifier>
+        </msIdentifier>
+        <head>
+        <origDate></origDate>
+        </head>
+        <physDesc>
+        <objectDesc form="codex">
+        <supportDesc material="parchment">
+        <support></support>
+        <extent><num></num></extent>
+        <foliation></foliation>
+            <collation></collation> 
+        </supportDesc>
+        <layoutDesc>
+        <layout columns="2">
+        
+        <dimensions type="layout">
+                        <height unit="mm"></height>
+                        <width unit="mm"></width>
+                    </dimensions>
+                </layout>
+            </layoutDesc>
+        </objectDesc>
+        <handDesc hands="1" cert="high">
+        <handNote>
+        <p></p>
+        </handNote>
+        </handDesc>
+        <scriptDesc>
+                <p></p>
+        </scriptDesc>
+        <decoDesc> 
+        <p></p>
+        </decoDesc>
+        <bindingDesc>
+        <binding>
+        <p></p>
+        </binding>
+        </bindingDesc>
+        </physDesc>
+        <history>
+        <origin>
+        <origPlace></origPlace>
+        <origDate></origDate>
+        </origin>
+        <provenance></provenance>
+        </history>
+        </msDesc>
+         </sourceDesc>
+            </fileDesc>
+            <profileDesc>
+                <creation resp="#VM" when="2023-02-02">
+                    <date><!-- Ajouter ici pour l'homme la valeur avec la date crée pour la machine juste ci-dessus : on la recopie telle quelle--></date>
+                </creation>
+              <textDesc>
+                    <channel mode="w"/>
+                    <constitution type="single"/> 
+                    <derivation type="translation">Traduction</derivation>
+                    <domain type="medecine">Médecine</domain>
+                    <factuality type="fact">Texte technique</factuality>
+                    <interaction type="none"/>
+                    <preparedness type="prepared"/>
+                    <purpose type="inform" />
+                </textDesc>
+                <settingDesc>
+                    <setting>
+                        <name></name>
+                        <time when="1217"></time><!-- VM2ST : pour when= on suit le concept "numdat" (fichier numdat.docx) pour transférer la datatation en chiffres -->
+                    </setting>
+                </settingDesc>
+        </profileDesc>
+        <encodingDesc>
+        <p></p>
+        </encodingDesc>
+        <revisionDesc>
+        <change when="2023-02-02" resp="#VM"></change>
+        </revisionDesc>
+        </teiHeader>
+    <text xml:id="TrotulaPr1-ALMA_edition" xml:lang="xno" type="fr">
+        <body>
+            <div xml:id="TrotulaPr1-ALMA_prologue"><!-- [Prologue] -->
+            <head><label>[0]</label>[Prologue]</head>
+            <p xml:id="TrotulaPr1-ALMA_prologue_0.1">
+            <label>[0.1]</label>
+            <pb n="246v" type="246" subtype="v"/><cb n="d"/>
+            <app>
+            <lem wit="#S">
+            <lb n="1"/>
+            <w xml:id="TrotulaPr1-ALMA_edition_246_v_d_1_0000001" form="Quant" lemma="cant1" POS="CONsub" morph="MORPH=empty" mainlemma="quant" sense="test definition quant">Quant</w>
+            <w xml:id="TrotulaPr1-ALMA_edition_246_v_d_1_0000002" form="Dex" lemma="dieu" POS="NOMpro" morph="NOMB.=s|GENRE=m|CAS=n" mainlemma="" sense="">Dex</w>
+            <w xml:id="TrotulaPr1-ALMA_edition_246_v_d_1_0000003" form="nostre" lemma="nostre" POS="DETpos" morph="PERS.=1|NOMB.=s|GENRE=m|CAS=r" mainlemma="" sense="">nostre</w><w xml:id="TrotulaPr1-ALMA_edition_246_v_d_1_0000004" form="Seignor" lemma="seignor" POS="NOMcom" morph="NOMB.=s|GENRE=m|CAS=r" mainlemma="" sense="">Seignor</w> out le mund estoré,
+            </lem>
+            <rdgGrp>
+            <rdg wit="#N">Deu nostre Seigneur, quant il &tilde-horizontal-e; ot le munde estoré</rdg>
+            <rdg wit="#W">Diex nostre Sire, quant il ot le secle estoré</rdg>
+            </rdgGrp>
+            <witDetail wit="#N #W">La leçon commune de NW s'éloigne davantage de TrotLat que S.</witDetail>
+            </app>
+            <note type="#TrotLat"><hi rendition="em">Cum auctor uniuersitatis deus in prima mundi constitutione rerum naturas singulas iuxta genus suum distingeret</hi>.</note>
+            <lb n="2"/>
+            <app>
+            <lem wit="#S #W"/>
+            <rdg wit="#N">et</rdg>
+            </app>
+            <w xml:id="TrotulaPr1-ALMA_edition_246_v_d_2_0000001" form="sor" lemma="sor2" POS="PRE" morph="MORPH=empty" mainlemma="" sense="">sor</w>
+            <w xml:id="TrotulaPr1-ALMA_edition_246_v_d_2_0000002" form="tote" lemma="tot" POS="DETind" morph="NOMB.=s|GENRE=f|CAS=r" mainlemma="" sense="">tote</w>
+            <w xml:id="TrotulaPr1-ALMA_edition_246_v_d_2_0000003" form="creature" lemma="crïature" POS="NOMcom" morph="NOMB.=s|GENRE=f|CAS=r" mainlemma="" sense="">creature</w>
+            <w xml:id="TrotulaPr1-ALMA_edition_246_v_d_2_0000004" form="si" lemma="si" POS="ADVgen" morph="DEGRE=-" mainlemma="" sense="">si</w>
+            <w xml:id="TrotulaPr1-ALMA_edition_246_v_d_2_0000005" form="fist" lemma="faire" POS="VERcjg" morph="MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s" mainlemma="" sense="">fist</w>
+            <w xml:id="TrotulaPr1-ALMA_edition_246_v_d_2_0000006" form="home" lemma="ome" POS="NOMcom" morph="NOMB.=s|GENRE=m|CAS=r" mainlemma="" sense="">home</w>
+            <app>
+            <lem wit="#S #N">
+            <w xml:id="TrotulaPr1-ALMA_edition_246_v_d_2_0000007" form="raisnable" lemma="raisnable" POS="ADJqua" morph="NOMB.=s|CAS=r|DEGRE=p" mainlemma="" sense="">raisnable</w>
+            </lem>
+            <rdg wit="#W">remuable</rdg>
+            </app>
+            <app>
+            <lem wit="#S #W"/>
+            <rdg wit="#N">creature</rdg>
+            </app>
+            <choice>
+            <corr>
+            <lb n="3"/>
+            <w xml:id="TrotulaPr1-ALMA_edition_246_v_d_2_0000008" form="amour" lemma="amor" POS="NOMcom" morph="NOMB.=s|GENRE=f|CAS=r" mainlemma="" sense="">amour</w>
+            </corr>
+            <sic>amir</sic>
+            </choice>
+            <w xml:id="TrotulaPr1-ALMA_edition_246_v_d_2_0000009" form="," lemma="," POS="PONfbl" morph="MORPH=empty" mainlemma="" sense="">,</w>
+            <w xml:id="TrotulaPr1-ALMA_edition_246_v_d_2_0000010" form="puis" lemma="puis" POS="ADVgen" morph="DEGRE=-" mainlemma="" sense="">puis</w>
+            <w xml:id="TrotulaPr1-ALMA_edition_246_v_d_2_0000011" form="li" lemma="il" POS="PROper" morph="PERS.=3|NOMB.=s|GENRE=m|CAS=i" mainlemma="" sense="">li</w>
+            <w xml:id="TrotulaPr1-ALMA_edition_246_v_d_2_0000012" form="dona" lemma="doner" POS="VERcjg" morph="MODE=ind|TEMPS=psp|PERS.=3|NOMB.=s" mainlemma="" sense="">dona</w>
+            </p>
+            </div>
+        </body>
+</text>
+</TEI>
